@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Data Science Blog Online."
+title:  "Pandas, Python and DataFrames! Oh My!"
 date:   2017-06-16 09:36:08 -0500
 categories: general
 ---

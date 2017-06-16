@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Miles Porter is a software engineer and data scientist working and living in the twin cities.  Having worked as an independent consultant for over 10 years, Miles has extensive experience in IoT, retail/ecommerce, medical device, transportation and insurance industries.  Miles is currently researching machine learning, deep learning, and more general topics in the field of data science. t
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+When not working on his computer, Miles can typically be found playing bass, traveling, or practicing and teaching Tae Kwon Do.
 
-You can find the source code for Jekyll at
+Miles Porter (aka 
 {% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+[fractalbass](https://github.com/fractalbass) )
+Miles Porter [music](https://milesporter.bandcamp.com/track/all-the-things-you-are)
+Miles Porter [IoT Blog](https://pragmaticiot.wordpress.com)
+

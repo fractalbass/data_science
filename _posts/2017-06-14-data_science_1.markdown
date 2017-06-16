@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Data Science Blog Online."
+title:  "What is Data Science?"
 date:   2017-06-14 15:55:08 -0500
 categories: general
 ---

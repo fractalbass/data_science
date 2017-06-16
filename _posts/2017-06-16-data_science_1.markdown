@@ -13,7 +13,7 @@ Turns out, there are a number of tools that making working with data much, MUCH 
 
 This blog post will focus on using pandas' DataFrame class for working with tabular data sets.  So, let's get started:
 
-##Series
+## Series
 
 Before I get to dataframes, it probably makes sense to describe how Series work.  A Series stores, well, a series of elements.  In this respect, it is very similar to list (or array.)
 
@@ -59,7 +59,7 @@ There are many other methods available for use with Series.  For a complete list
 
 [https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.html]()
 
-##Dataframes
+## Dataframes
 DataFrames are
 > ...a Two-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). Arithmetic operations align on both row and column labels. Can be thought of as a dict-like container for Series objects.
 
@@ -91,7 +91,7 @@ Much in the way that Series provides methods that are not available on a basic p
 As you can see from the above, one of the most basic features of a DataFrame is to just display the data in a nice table.
 
 There is much more to DataFrames, however.  Let's check some of that out...
-##Referencing Data in DataFrames
+## Referencing Data in DataFrames
 
 Let's say that we want to view a subset of the data in a dataframe.  For example, if we wanted to work with just the series that deals with ages from our Karate dataframe, we could do this:
 
@@ -138,17 +138,17 @@ max    56.000000  20.000000
 
 Again, this is just the tip of the iceberg.  Check out the docs for more:  [https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html]()
 
-##Visualizing DataFrames
+## Visualizing DataFrames
 
 On of the last things that I want to mention is that the DataFrame object does have the ability to do some data visualization.  Check out the following example:
 
-![DataFrame Visualizations](./dataframe_image.png){:class="img-responsive"}
+![DataFrame Visualizations](dataframe_image.png)
 
 
-##Conclusion
+## Conclusion
 
 THe first chapter of the udacity Introduction to Data Science went over these and many other interesting features of pandas and numpy.  For more info on these topics, check out the above links, or the Udacity course.  It is free, BTW.
 
-##Looking forward
+## Looking forward
 The next section of the course has to do with dealing with data from various files.  I used the panda read from file feature to load data in the past.  Check back soon for more info on that topic.
 

@@ -40,7 +40,7 @@ I also reviewed a few different blog posts related to data science.  I even revi
 ## Results from Educational Resources
 
 - [http://datasciencedegree.wisconsin.edu/blog/history-of-data-science/]()
-- https://datascience.berkeley.edu/
+- [https://datascience.berkeley.edu/]()
 - [http://www.extension.harvard.edu/academics/professional-graduate-certificates/data-science-certificate]()
 - [https://datascience.umn.edu/]()
 
@@ -59,7 +59,7 @@ At the end of the day, I have decided that I will need to align my efforts towar
 	- [Tensor Flow](https://www.tensorflow.org/)
 	- [Keras](https://keras.io/)
 
-To get things started, I am planning on taking an online course on Data Science and Machine Learning with Python, just to brush off my skills and set a solid foundation.
+To get things started, though, I am planning on taking an online course on Data Science and Machine Learning with Python, just to brush off my python skills and set a solid foundation.
 
 [https://classroom.udacity.com/courses/ud359]()	
 

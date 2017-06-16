@@ -143,7 +143,7 @@ Again, this is just the tip of the iceberg.  Check out the docs for more:  [http
 On of the last things that I want to mention is that the DataFrame object does have the ability to do some data visualization.  Check out the following example:
 
 ![DataFrame Visualizations](dataframe_image.png)
-
+{%raw%}{% image_tag src=dataframe_image.png width="200" %}{%endraw%}
 
 ## Conclusion
 

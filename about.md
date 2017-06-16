@@ -8,9 +8,7 @@ Miles Porter is a software engineer and data scientist working and living in the
 
 When not working on his computer, Miles can typically be found playing bass, traveling, or practicing and teaching Tae Kwon Do.
 
-Miles Porter (aka 
-{% include icon-github.html username="jekyll" %} /
-[fractalbass](https://github.com/fractalbass) )
-Miles Porter [music](https://milesporter.bandcamp.com/track/all-the-things-you-are)
-Miles Porter [IoT Blog](https://pragmaticiot.wordpress.com)
+### Links
+- Miles Porter [music](https://milesporter.bandcamp.com/track/all-the-things-you-are)
+- Miles Porter [IoT Blog](https://pragmaticiot.wordpress.com)
 

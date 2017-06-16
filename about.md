@@ -9,6 +9,6 @@ Miles Porter is a software engineer and data scientist working and living in Min
 When not working on his computer, Miles can typically be found playing music (upright and electric bass), traveling with his family, or practicing and teaching Tae Kwon Do.
 
 ### Links
-- Music](https://milesporter.bandcamp.com/track/all-the-things-you-are)
+- [Music](https://milesporter.bandcamp.com/track/all-the-things-you-are)
 - [IoT Blog](https://pragmaticiot.wordpress.com)
 - [Song Moo Kwan Tae Kwon Do](http://www.songmookwan.com/)

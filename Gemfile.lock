@@ -35,8 +35,8 @@ GEM
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
     rb-fsevent (0.9.8)
-    rb-inotify (0.9.8)
-      ffi (>= 0.5.0)
+    rb-inotify (0.9.9)
+      ffi (~> 1.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.24)
@@ -49,9 +49,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
   tzinfo-data
-
-RUBY VERSION
-   ruby 2.0.0p648
 
 BUNDLED WITH
    1.15.1

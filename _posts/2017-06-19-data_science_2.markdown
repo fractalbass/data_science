@@ -246,3 +246,6 @@ We can also graph this distribution as so:
 
 ![Dataframe Visualization]({{ site.url }}/images/age_rel_freq.png)
 
+## Summary
+
+This post has covered only the most basic aspects of R.  Check out my next post as I explore more of the features of this language, and more topics in data science in general.

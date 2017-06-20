@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "I feel the earth move under my feet...."
+title:  "I feel the earth  - move - under my feet..."
 date:   2017-06-20 09:00:00 -0500
 categories: general
 ---
@@ -16,7 +16,7 @@ The statistics that I will be looking at will be frequency and relative frequenc
   
 So, let's take a look at the data.  
 
-## The data
+## The Data
 The first thing that I noticed in the data is that the CSV that defines the data has some long column names defined.  I edited the csv file and redefined the names:
 
 <pre>

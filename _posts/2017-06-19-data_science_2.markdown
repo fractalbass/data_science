@@ -4,7 +4,7 @@ title:  "All the things, you R..."
 date:   2017-06-19 09:36:08 -0500
 categories: general
 ---
-Python is not the only language used in the field of data science.  Another frequently used language is "R".  Before I dig deeper in the the Udacity course, I have decided to spend a little time exploring this language.  As my guide, I will be using the Datacamp free tutorial on the language as well as looking as some data on my own.  First, however, I need to get the thing installed.  (The tutorial includes an online R interactive console.  I prefer, however, to have the language installed on my mac as well.)
+Python is not the only language used in the field of data science.  Another frequently used language is "R".  Before I dig deeper in the the Udacity course, I have decided to spend a little time exploring this language.  As my guide, I will be using the Datacamp free tutorial on the language as well as looking at some data on my own.  First, however, I need to get the thing installed.  (The tutorial includes an online R interactive console.  I prefer, however, to have the language installed on my mac as well.)
 
 ## Installing R
 

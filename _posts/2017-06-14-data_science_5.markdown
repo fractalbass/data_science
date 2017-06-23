@@ -314,4 +314,6 @@ There is much more to the process of cluster analysis than I have covered here. 
         
 Complete code for this blog post can be found in the following GIT repo:
 
-[https://github.com/fractalbass/data_clustering_demo]()        
+https://github.com/fractalbass/data_clustering_demo
+
+       

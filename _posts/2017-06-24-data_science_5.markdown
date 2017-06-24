@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Hall of Justice"
-date:   2017-06-24 15:55:08 -0500
+date:   2017-06-24 00:00:08 -0500
 categories: general
 ---
 # The League of Justice

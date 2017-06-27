@@ -108,6 +108,8 @@ So far, these have all been easy.  They are just taken directly from the problem
 P(B) = the probability that the test is positive and the disease is present plus the probability that the test is positive but the disease is NOT present.  (We annotate not with a "~")...
 
 ![Bayes' Theorem]({{ site.url }}/images/eq_2.png)
+\=
+![Bayes' Theorem]({{ site.url }}/images/eq_2b.png)
 
 Substituting this all back into Bayes' Theorem we have
 

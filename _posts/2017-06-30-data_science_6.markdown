@@ -93,7 +93,7 @@ In this case we really didn't need Bayes' Theorem to calculate the results.  How
 
 (Taken from Introduction to Probability and Statistics, Second Edition by J.S. Milton and Jesse C. Arnold, McGraw-Hill Publishing 1990.  ISBN: 0-07-042353-9)
 
->A test has ben developed to detect a particular type of arthritis in individuals over 50 years old.  From a national survey, it is known that approximately 10% of the individuals in this age group suffer from this form of arthritis.  The proposed test as given to individuals with confirmed arthritic disease, and a correct test result was obtained in 85% of the cases.  When the test was administered to individuals of the same age group who were known to be free of the disease, 4% were reported to have the disease.  What is the probability that an individual has this disease given that the test indicates its presence.
+>A test has ben developed to detect a particular type of arthritis in individuals over 50 years old.  From a national survey, it is known that approximately 10% of the individuals in this age group suffer from this form of arthritis.  The proposed test was given to individuals with confirmed arthritic disease, and a correct test result was obtained in 85% of the cases.  When the test was administered to individuals of the same age group who were known to be free of the disease, 4% were reported to have the disease.  What is the probability that an individual has this disease given that the test indicates its presence.
 
 So, from the above, we know:
 

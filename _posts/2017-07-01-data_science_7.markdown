@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bayesian Inference Part 2: Data Science, Its Yuge!"
-date:   2017-06-27 00:09:00 -0500
+date:   2017-06-30 00:09:00 -0500
 categories: general
 ---
 # Bayesian Inference Part 2: Data Science, It's Yuge!

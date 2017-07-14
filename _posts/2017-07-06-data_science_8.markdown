@@ -123,7 +123,9 @@ The neural network gets a score of 84%...  The basket in the game is 5 pixels wi
 
 ## Conclusion
 
-While Reinforcement Learning techniques are a proven way to train neural networks to play video games, based on the structure of the game we have shown that basic SDG neural nets perform well.  The code for this post (such that it is) is available on github at:  https://github.com/fractalbass/neuralnest
+While Reinforcement Learning techniques are a proven way to train neural networks to play video games, based on the structure of the game we have shown that basic SDG neural nets perform well.  The code for this post (such that it is) is available on github at:  
+
+[https://github.com/fractalbass/neuralnest](https://github.com/fractalbass/neuralnest)
 
 This blog post and the associated code evolved over time.  As a result, the code is not as clean as I would have liked it to be.  I hope to return to this code in the future and clean it up a bit.
 

@@ -121,13 +121,31 @@ And finally, here is the end result...
 
 The neural network gets a score of 84%...  The basket in the game is 5 pixels wide, and the screen is 20 pixels across.  So, if the eggs are evenly distributed, we would expect the game to score around 25%. Clearly, the trained agent is doing something right.
 
+## But what if...
+
+One of the benefits of using sequential neural networks is that they have the ability to generalize.  In other words, they can often figure out what to do even if they have not be trained on the situation.  So, let's see how our neural network does if we make things a bit more difficult.  We could speed up the game by making the eggs drop faster.  That, however, won't have much effect.  The network grabs the screens one at a time, so the motion of the eggs doesn't have any impact.  Regardless of the egg speed, the network is acting on snapshots of the data.  
+
+One way that we can make the situation more difficult is by increasing the number of eggs that fall at one time as well as speed the eggs.  Because the eggs fall at different rates (did I mention that) this can lead to impossible scenarios, so we probably will not see the network do as well.  In this video, the game drops another egg as soon as the one before it has fallen at least 7 squares.  It can also chose not to drop an egg and wait a few more cycles.  You can see the results in this video...
+
+[Neural Net Agent...  Mission Impossible.](https://youtu.be/eF4ugkTBa1E)
+
+In this video the agent success rate dropped to 62%.  When I tried it at that level, I got...
+
+```
+ Game over.  Caught:39   Dropped:61  Success Rate=39% 
+```
+
+I'll spare you the video.  Suffice it to say that we lost a few Humptys.
+
 ## Conclusion
 
-While Reinforcement Learning techniques are a proven way to train neural networks to play video games, based on the structure of the game we have shown that basic SDG neural nets perform well.  The code for this post (such that it is) is available on github at:  
+While Reinforcement Learning techniques are a proven way to train neural networks to play video games, based on the structure of the game we have shown that basic SDG neural nets perform well.  In addition to performing at training levels, the networks generalize well and can even exceed the ability of humans (me) at playing simple video games.
+
+The code for this post (such that it is) is available on github at:  
 
 [https://github.com/fractalbass/neuralnest](https://github.com/fractalbass/neuralnest)
 
-This blog post and the associated code evolved over time.  As a result, the code is not as clean as I would have liked it to be.  I hope to return to this code in the future and clean it up a bit.
+Note:  This blog post and the associated code evolved over time.  As a result, the code is not as clean as I would have liked it to be.  I hope to return to this code in the future and clean it up a bit.
 
 Thanks for checking out this post.  I have a couple more planned, so check back soon, or subscribe to the feed.
 

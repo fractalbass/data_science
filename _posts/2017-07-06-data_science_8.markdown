@@ -121,7 +121,7 @@ And finally, here is the end result...
 
 The neural network gets a score of 84%...  The basket in the game is 5 pixels wide, and the screen is 20 pixels across.  So, if the eggs are evenly distributed, we would expect the game to score around 25%. Clearly, the trained agent is doing something right.
 
-## But what if...
+## This is easy.  I wonder if...
 
 One of the benefits of using sequential neural networks is that they have the ability to generalize.  In other words, they can often figure out what to do even if they have not be trained on the situation.  So, let's see how our neural network does if we make things a bit more difficult.  We could speed up the game by making the eggs drop faster.  That, however, won't have much effect.  The network grabs the screens one at a time, so the motion of the eggs doesn't have any impact.  Regardless of the egg speed, the network is acting on snapshots of the data.  
 
@@ -129,13 +129,17 @@ One way that we can make the situation more difficult is by increasing the numbe
 
 [Neural Net Agent...  Mission Impossible.](https://youtu.be/eF4ugkTBa1E)
 
-In this video the agent success rate dropped to 62%.  When I tried it at that level, I got...
+In this video the agent success rate dropped to 62%. 
+
+## How does this compare to a real person?
+
+When I tried it at that level, I got...
 
 ```
  Game over.  Caught:39   Dropped:61  Success Rate=39% 
 ```
 
-I'll spare you the video.  Suffice it to say that we lost a few Humptys.
+I'll spare you the video.  Suffice it to say that when I tried the game at that level, I lost more than a few Humptys.
 
 ## Conclusion
 

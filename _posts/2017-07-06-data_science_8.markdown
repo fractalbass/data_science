@@ -17,12 +17,12 @@ This post is about a video game that I have written called "Neural Nest."  The g
 
 The following collected statements are from my internal dialog while writing this post and the associated code. It is included here for people that don't have enough time, or interest to read the entire post.  (You know who you are.)  
 
-> "I saw your post...  I didn't read it though.  It was too long."
+> People are always saying "I saw your post...  I didn't read it though.  It was too long."
 
 
 > "I should write a post about reinforcement learning neural networks."
 
-> "Training nets to play video games are good way to demo RL and convolution networks."
+> "Training nets to play video games is a good way to demo RL and convolution networks."
 
 > "Everybody and their dog has written a post about convolution neural nets and python/pygame Atari games."
 
@@ -36,7 +36,7 @@ The following collected statements are from my internal dialog while writing thi
 
 > "Uh oh.  Convolution neural networks take lots of time and computing resources."
 
-> "Wait...  I don't need a convolution neural net to play the game that I just wrote.  I can just use a straight SDG (stochastic gradient descent) algorithm with a standard sequential neural net."
+> "Wait...  I don't need a convolution neural net to play the game that I just wrote.  I can just use a straight SGD (stochastic gradient descent) algorithm with a standard sequential neural net."
 
 > "This isn't working.  Maybe this neural net stuff wasn't such a good idea."
 

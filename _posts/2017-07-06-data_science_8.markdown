@@ -143,7 +143,7 @@ I'll spare you the video.  Suffice it to say that when I tried the game at that 
 
 ## Conclusion
 
-While Reinforcement Learning techniques are a proven way to train neural networks to play video games, based on the structure of the game we have shown that basic SDG neural nets perform well.  In addition to performing at training levels, the networks generalize well and can even exceed the ability of humans (me) at playing simple video games.
+While Reinforcement Learning techniques are a proven way to train neural networks to play video games, based on the structure of the game we have shown that basic SGD neural nets perform well.  In addition to performing at training levels, the networks generalize well and can even exceed the ability of humans (me) at playing simple video games.
 
 The code for this post (such that it is) is available on github at:  
 

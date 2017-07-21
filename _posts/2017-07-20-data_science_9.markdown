@@ -107,6 +107,6 @@ It is hard not to work on this data set without giving some thought to the peopl
 
 The code associated with this post can be found on github:
 
-[https://github.com/fractalbass/titanic]()
+[https://github.com/fractalbass/titanic](https://github.com/fractalbass/titanic)
 
 Thanks for reading!  I'll be back soon with more blog posts on the topic of data science.

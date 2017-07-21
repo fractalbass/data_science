@@ -110,3 +110,9 @@ The code associated with this post can be found on github:
 [https://github.com/fractalbass/titanic](https://github.com/fractalbass/titanic)
 
 Thanks for reading!  I'll be back soon with more blog posts on the topic of data science.
+
+## Update:
+
+I was curious how the neural network would compare to just trying to find the closest match to each record from the test set in the training set and then assigning the survival based on the training set.  I think of it sort of like a closest buddy test...  Or, more appropriately the closest known point in the 7-dimensional space defined by Passenger class, Age Number of Siblings, Number of Parents/Children, Fare and Embarkation Point.  It turns out that this method is not very good.  I achieved only 56.938% accuracy using this method.  When I normalized the fare and age data to range between 0 and 1, I was able to increase the accuracy to 57.416%.  
+
+This surprised me a bit.  I would have thought that this brute-force method would have been more accurate.  I guess there is something to this neural net stuff after all.  :)  

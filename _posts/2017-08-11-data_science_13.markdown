@@ -102,7 +102,7 @@ Again, please note that the above statements were based on analysis of the Globa
 
 <hr>
 
-I hope you have found this post informative.  It is unfortunate that we live in a world where terrorism is common.  It is my hope that by seeking to understand the data about the attacks and the motivations of the attackers will help eliminate the threat of terrorism.  
+I hope you have found this post informative.  It is unfortunate that we live in a world where terrorism is common.  It is my hope that seeking to understand the data about the attacks and the motivations of the attackers will help eliminate the threat of terrorism.  
 
 Thanks for reading this post and stay tuned for more interesting topics in data science and machine learning.
 

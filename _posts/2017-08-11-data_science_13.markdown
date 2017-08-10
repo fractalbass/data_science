@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hitting Close to Home - Data on Global Terrorism"
-date:   2017-08-11 00:08:30 -0500
+date:   2017-08-10 00:16:30 -0500
 categories: general
 ---
 
@@ -91,19 +91,18 @@ In looking at the trends for terrorist attacks, we see the following:
 This post has just scratched the surface of the data behind global terrorism. We can draw the following general conclusions based on the data from the University of Maryland Global Terrorism Database:
 
 - Terrorist attacks have happened throughout the world from 1970 through 2016.
-- The deadliest attacks in that time period have been in central and South America, Africa, the Middle East, and in some of South and Southeast Asia.  The most notable exceptions have been the attacks in Oklahoma City and the World Trade Center Attacks.
+- The deadliest attacks in that time period have been in Central and South America, Africa, the Middle East, and in some of South and Southeast Asia.  The most notable exceptions have been the attacks in Oklahoma City and the World Trade Center attacks.
 - Most successful terrorist attacks have resulted in the deaths of 5 people or less per attack.
-- Bombing and Explosions account for roughly half of all successful terrorist attacks.
+- Bombing and explosions were used in roughly half of all successful terrorist attacks.
 - The groups responsible for most terrorist attacks are unknown, with the Taliban, Shining Path, and ISIL a distant 2nd, 3rd, and 4th.
 - The targets of terrorist attacks tend to be private citizens and property.
 - The trend of terrorist attacks rose until 1992, then dropped off until 1999 and then started to rise again.  The number of attacks peaked in 2014, but has dropped of in recent years. 
-
 
 Again, please note that the above statements were based on analysis of the Global Terrorism Database.  Data behind the analysis (with the exception of general geographic information) was restricted to known successful attacks with a known number of victims.
 
 <hr>
 
-I hope you have found this post informative.  It is unfortunate that we live in a world where terrorism is so common.  It is my hope that the continued analysis of the data about the attacks, and the motivations behind them will one day all but eliminate the threat of terrorism.  
+I hope you have found this post informative.  It is unfortunate that we live in a world where terrorism is common.  It is my hope that by seeking to understand the data about the attacks and the motivations of the attackers will help eliminate the threat of terrorism.  
 
 Thanks for reading this post and stay tuned for more interesting topics in data science and machine learning.
 

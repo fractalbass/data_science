@@ -57,6 +57,33 @@ hist(csuccess$nkill, breaks=500, xlim=c(0,100), xlab="number of deaths", col = c
 
 ![World Terrorism Attacks Histogram]({{ site.url }}/images/histogram_of_terrorist_attack_deaths.png)
 
+
+# Clustering the Attacks
+
+We can use a clustering technique to breakdown where the attacks are happening into regions.  The following map shows the attacks, with the number of cluster arbitrarily set to 8.  (For more info on clustering [see this previous blog post](http://datascience.netlify.com/general/2017/06/24/data_science_5.html).
+
+![World Terrorism Attacks Clusters]({{ site.url }}/images/Terror_Attacks_Clustered.png)
+
+# Heat Maps of Terrorist Attacks Worldwide
+
+These maps can be somewhat misleading simply because the dots overlap.  A heat map reveals where the highest density of attacks have been:
+
+![World Terrorism Attacks Heatmap]({{ site.url }}/images/world_heat_map.png)
+
+Drilling into the Middle East we can see that the attacks have been primarily centered in Iraq and Afghanistan/Pakistan.
+
+![Middleast Heat Map]({{ site.url }}/images/middle_east_heat_map.png)
+
+In Afghanistan/Pakistan, the attacks center around Pashawar
+
+![Pashawar Heat Map]({{ site.url }}/images/Pashawar_terror_heatmap.png)
+
+And in Iraq, the attacks are clearly centered on Baghdad.
+
+![Iraq Heat Map]({{ site.url }}/images/iraq_heat_map.png) 
+
+# Types of Attacks
+
 Successful attacks break down into the following types:  
 
 ```R
@@ -91,7 +118,7 @@ In looking at the trends for terrorist attacks, we see the following:
 This post has just scratched the surface of the data behind global terrorism. We can draw the following general conclusions based on the data from the University of Maryland Global Terrorism Database:
 
 - Terrorist attacks have happened throughout the world from 1970 through 2016.
-- The deadliest attacks in that time period have been in Central and South America, Africa, the Middle East, and in some of South and Southeast Asia.  The most notable exceptions have been the attacks in Oklahoma City and the World Trade Center attacks.
+- The highest density of attacks have been in Iraq and Afghanistan/Pakistan.
 - Most successful terrorist attacks have resulted in the deaths of 5 people or less per attack.
 - Bombing and explosions were used in roughly half of all successful terrorist attacks.
 - The groups responsible for most terrorist attacks are unknown, with the Taliban, Shining Path, and ISIL a distant 2nd, 3rd, and 4th.

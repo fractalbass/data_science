@@ -60,7 +60,7 @@ hist(csuccess$nkill, breaks=500, xlim=c(0,100), xlab="number of deaths", col = c
 
 # Clustering the Attacks
 
-We can use a clustering technique to breakdown where the attacks are happening into regions.  The following map shows the attacks, with the number of cluster arbitrarily set to 8.  (For more info on clustering [see this previous blog post](http://datascience.netlify.com/general/2017/06/24/data_science_5.html).
+We can use a clustering technique to breakdown where the attacks are happening into regions.  The following map shows the attacks, with the number of cluster arbitrarily set to 8.  (For more info on clustering [see this previous blog post](http://datascience.netlify.com/general/2017/06/24/data_science_5.html).)
 
 ![World Terrorism Attacks Clusters]({{ site.url }}/images/Terror_Attacks_Clustered.png)
 

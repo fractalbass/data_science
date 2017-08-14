@@ -15,13 +15,13 @@ If you have ever worked on a home plumbing project, particularly those that invo
 
 ![knuckle-buster]({{ site.url }}/images/bottom_of_sink.jpg)
 
-The above image is a bottom-up view of the water spigot my wife refers to in her text message.  It is, as they say, a real "knuckle-buster".  Not only is there about 1 inch of clearance on either side of the nut, it sits at the top of a narrow gap between the back of the sink and the wall.  Tightening that nut is about as much of a challenge as Luke Skywalker faced when he had to hit the exhaust vent with a torpedo in order to blow up the Death Star.
+The above image is a bottom-up view of the water spigot my wife refers to in her text message.  It is, as they say, a real "knuckle-buster".  Not only is there about 1 inch of clearance on either side of the nut, it sits at the top of a narrow gap between the back of the sink and the wall.  Tightening that nut is about as much of a challenge as hitting the exhaust vent with a torpedo in order to blow up the Death Star.
  
 ![knuckle-buster]({{ site.url }}/images/use_the_force_luke.jpeg)
 
 Did I mention that the nut was a metric 14mm?  I am convinced that nut was also manufactured by the evil empire. 
 
-I was able to get the darn thing tightened with the help of my son, some decent back support and The Force.  While I was lodged under the kitchen sink, it occurred to me that the sink situation is, in some ways, similar to trying to work with raw data.  Often times, there is just a bunch of stuff in the way.
+I was able to get the (ahem) thing tightened with the help of my son, some decent back support and The Force.  While I was lodged under the kitchen sink, it occurred to me that the sink situation is, in some ways, similar to trying to work with raw data.  Often times, there is just a bunch of stuff in the way.
 
 ##  Cleaning Up Data.
 
@@ -34,7 +34,7 @@ One of the great things about Kaggle.com is that it provides an opportunity to s
 
 I am particularly impressed with Dr. Bekele and Mr. Kumar for their clean explanations and easy to follow example code.  Much of the rest of this post follows from their work.
 
-The interesting thing about this data set is that it contains columns of data that have a very high correlation.  In other words, things like radius and area are nearly reporting the same thing.  This poses a problem in machine learning because duplicated, or nearly duplicated, data can easily overshadow the most important features of a data set.  
+The interesting thing about this data set is that it contains columns of data that have a very high correlation.  In other words, things like radius and area are nearly reporting the same thing.  This poses a problem in machine learning because redundant data can easily overshadow the most important features of a data set.  
 
 One way to help identify and eliminate redundant data is to create a [pair-wise covariance matrix](https://docs.scipy.org/doc/numpy/reference/generated/numpy.cov.html) and remove/reduce the number columns that have a high correlation.
 
@@ -160,7 +160,7 @@ One thing of particular mathematical significance is how "...[the principal comp
 
 # Conclusion
 
-The steps outlined above for the lazy Parker dataset are very similar to several approaches used to model the breast cancer dataset on Kaggle.com  This blog post is getting a bit long, and so I am going to end it here.  My next blog post will return to the cancer data set and go over some different approaches for predicting benign and malignant tumors based on observed cell properties using pre-processed data.
+The steps outlined above for the lazy Parker dataset are very similar to several approaches used to pre-process the breast cancer dataset on Kaggle.com  This blog post is getting a bit long, and so I am going to end it here.  My next blog post will return to the cancer data set and go over some different approaches for predicting benign and malignant tumors based on observed cell properties using pre-processed data.
 
 I think I will go get a drink of water now.
 

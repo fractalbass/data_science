@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Knuckle Buster - Cleaning Up Data"
-date:   2017-08-14 00:16:30 -0500
+date:   2017-08-14 00:14:00 -0500
 categories: general
 ---
 

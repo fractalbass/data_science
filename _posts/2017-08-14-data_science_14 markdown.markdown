@@ -45,14 +45,14 @@ To show a simple example of this, I will turn to my trusty cat Parker.
 Consider the following table:
 
 ```text
-        Day  Meows  Sleeping  Hariballs  Sleeping_Bed  Sleeping_Sunshine  
-     Sunday     14       903          2           722                181   
-     Monday     18      1100          0           836                264   
-    Tuesday     22       850          0           697                153   
-  Wednesday     18       917          1           724                193   
-   Thrusday     16       856          0           693                163   
-     Friday     21      1341          0          1059                282   
-   Saturday     97       872          2           723                149  
+Day,		Meows,	Sleeping,	Hariballs,	Bed,	Sunshine,	Litterbox,	Eating,	Drinking,	Counter
+Sunday,		14,		903,		2,			722,	181,		2,			3,		5,			4
+Monday,		18,		1100,		0,			836,	264,		1,			4,		6,			5
+Tuesday,	22,		850,		0,			697,	153,		4,			3,		5,			4
+Wednesday,	18,		917,		1,			724,	193,		2,			5,		4,			2
+Thrusday,	16,		856,		0,			693,	1663,		4,			4,		5,			6
+Friday,		21,		1341,		0,			1059,	282,		1,			3,		6,			12
+Saturday,	97,		872,		2,			723,	149,		3,			5,		7,			14 
 ```
 
 > Note:  My cat is lazy.  This is made up data, but he is still laaaazzzzyyyy.

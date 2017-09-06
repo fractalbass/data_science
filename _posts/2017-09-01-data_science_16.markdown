@@ -76,7 +76,7 @@ I won't go into using the wrong methods.  However, lets look at an example where
 
 In each square foot there is 144 * 47 blades of grass.  (I know this from [here](https://prezi.com/roben6fpzshd/blades-of-grass-in-a-football-field/).)  So, based on this, my yard has roughly 101,520,000 blades of grass.  If I measure 10 random blades of grass, I get the following:
 <pre>
-Sample		Value1		752		313		304		565		836		1017		388		409		2710		50Mean		53.1Var		643.21
+Sample		Length(cm)1		752		313		304		565		836		1017		388		409		2710		50Mean		53.1Var		643.21
 Stdev		25.36
 </pre>
 

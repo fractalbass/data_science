@@ -99,7 +99,7 @@ And we could say that we are 95% confident that the mean of the population is be
 
 But we won't say that.  Because if we did, WE WOULD BE COMPLETELY WRONG!
 
-That is not what a confidence interval does.  What we are really saying is that 95% of all samples of size 10 with a standard deviation of 25.36 and a mean of 53.1 will contain the population mean.  Or, if we keep taking samples of 10, and we keep computing the interval based on the steps above, 95% of those intervals would contain the sample mean.
+That is not what a confidence interval does.  What we are really saying is that 95% of all samples of size 10 with a standard deviation of 25.36 and a mean of 53.1 will contain the population mean.  Or, if we keep taking samples of 10, and we keep computing the interval based on the steps above, 95% of those intervals would contain the population mean.
 
 An even easier way to think of this is...  I took all the samples from my front yard (because I'm lazy and didn't put on shoes and didn't want to walk to the back.)  The grass grows much taller in the back.  Trust me on this.  I mow my own yard and haven't done it in a while.  I know that the grass in the back is going to push the population mean much higher.
 
@@ -115,5 +115,5 @@ In previous posts, I have focused on how to classify and make predictions based 
 
 I hope you have enjoyed this post.  Please tune in next time for a deeper exploration into the topics of randomness, chaos and non-linearity.
 
-Now if you will excuse me, I am going to go put on some headphones and listen to Joni Mitchell while I mow my yard.
+Now, if you will excuse me, I am going to go put on some headphones and listen to Joni Mitchell while I mow my yard.
  

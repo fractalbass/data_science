@@ -76,11 +76,11 @@ I won't go into using the wrong methods.  However, lets look at an example where
 
 In each square foot there is 144 * 47 blades of grass.  (I know this from [here](https://prezi.com/roben6fpzshd/blades-of-grass-in-a-football-field/).)  So, based on this, my yard has roughly 101,520,000 blades of grass.  If I measure 10 random blades of grass, I get the following:
 <pre>
-Sample		Length(cm)1		752		313		304		565		836		1017		388		409		2710		50Mean		53.1Var		643.21
+Sample		Length(mm)1		752		313		304		565		836		1017		388		409		2710		50Mean		53.1Var		643.21
 Stdev		25.36
 </pre>
 
-(Yes, I actually DID go pull 10 blades of grass from my yard.)  In order to estimate the mean length of grass (the mean of the population) in my yard we could just say "It is around 53.1cm."  That would be ok and we could stop  there...  but that kind of effort is probably not going to get us a gig in data science.  :)  
+(Yes, I actually DID go pull 10 blades of grass from my yard.)  In order to estimate the mean length of grass (the mean of the population) in my yard we could just say "It is around 53.1mm."  That would be ok and we could stop  there...  but that kind of effort is probably not going to get us a gig in data science.  :)  
 
 To build a confidence interval estimate we would do the following. (Note: [See this site](http://onlinestatbook.com/2/estimation/mean.html) for a nice explanation on the topic of confidence intervals on a sample mean.)
 
@@ -95,7 +95,7 @@ Finally, we compute our confidence interval to be:
 Lower limit = 53.1 - (1.833)(8.0253) = 38.3896  
 Upper limit = 53.1 + (1.833)(8.0253) = 67.8104
 
-And we could say that we are 95% confident that the mean of the population is between 38.3896 and 67.8104.
+And we could say that we are 95% confident that the mean of the population is between 38.3896mm and 67.8104mm.
 
 But we won't say that.  Because if we did, WE WOULD BE COMPLETELY WRONG!
 
@@ -116,4 +116,5 @@ In previous posts, I have focused on how to classify and make predictions based 
 I hope you have enjoyed this post.  Please tune in next time for a deeper exploration into the topics of randomness, chaos and non-linearity.
 
 Now, if you will excuse me, I am going to go put on some headphones and listen to Joni Mitchell while I mow my yard.
- 
+
+Credit where credit is due:  Thanks, Paul Close, for noticing that I stupidly wrote centimeters when I really meant millimeters.

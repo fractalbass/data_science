@@ -7,8 +7,6 @@ categories: general
 
 #   Introduction
 
-The title of this post is taken from an old musician's joke.
-
 One of the key tools in analyzing data signals is the ability to break signals down into their component parts.  Fourier Analysis is a technique that does just that.  This blog post will cover some of the details of Fourier Analysis and the role that it can play in data science.  A data scientist, albeit one without a sense of humor, would likely turn to Fourier Analysis to answer the question, "What is the difference between a saxophone and a lawnmower?"
 
 #  Joseph Fourier

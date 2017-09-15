@@ -36,11 +36,11 @@ In a boosting algorithm, the final classifier is made up of the weighted sum of 
 
 ![boosting scheme]({{ site.url }}/images/adaboost_scheme.png)
 
-(Note: The above formula taken from [this document by Trevor Hastie of Standford Univ.](http://jessica2.msri.org/attachments/10778/10778-boost.pdf) It is identical to the one used in "The Elements of Statistical Learning", except for a variable name change.)
+(Note: The above formula is taken from [this document by Trevor Hastie of Standford Univ.](http://jessica2.msri.org/attachments/10778/10778-boost.pdf) It is identical to the one used in "The Elements of Statistical Learning", except for a variable name change.)
 
 As the algorithm is built up, each successive classifier is forced to concentrate on the training observations that are missed by the previous classifier in the sequence(2).
 
-[This site](http://arogozhnikov.github.io/2016/06/24/gradient_boosting_explained.html) provides some very nice visualizers to see how boosting workings in smaller (three dimensional) data sets.
+[This site](http://arogozhnikov.github.io/2016/06/24/gradient_boosting_explained.html) provides some very nice visualizers to see how boosting working in smaller (three dimensional) data sets.
 
 # Parker "Nappytimes"
 
@@ -48,18 +48,19 @@ To satisfy my own curiosity about this subject, I decided to see if I could veri
 
 To work on this data, I am returning to my trusty cat Parker.
 
+![Parker again.]({{ site.url }}/images/parker_again.png)
 
 I have created some data that represents the amount of time (minutes) Parker spends sleeping during the day; his "NappyTime".  The columns Sunshine and Night_Activity represent the total number of minutes of direct sunlight for that day and the number of minutes of activity that Parker had the night before.  Parker likes to take naps in the sunshine, and he will nap more if he was busy the previous night. 
 
 ```text
-Day	Sunshine	Nite_Activity		NappyTimes1	0			0					752	0			100					3173	0			200					526...34	500			300					59035	500			400					55036	500			500					650 
+Day	Sunshine	Nite_Activity		NappyTimes1	0		0			752	0		100			3173	0		200			526...34	500		300			59035	500		400			55036	500		500			650 
 ```
 
 If the data looks suspicious, that is because it is.  I generated the data with a function that looks like this:
 
 N=INT(526+(((16 * (S - 320)) * (A - 320)^2)/1000000) + (RND()*100))
 
-Where S is the amount of sunshine and A is the amount of previous night activity, and RND is a function that returns a random value between 0 and 1.
+Where S is the amount of sunshine and A is the amount of previous night activity. INT returns only the integer part of the value and RND is a function that returns a random value between 0 and 1.
 
 The data I generated can be visualized as a 3D surface:
 
@@ -88,13 +89,13 @@ Note:  The code for this blog post can be found on [github](https://github.com/f
 
 # Something a bit more real...
 
-[Kaggle.com](https://www.kaggle.com/dalpozz/creditcardfraud) has a data set that consists of data from over 280,000 transactions that have been categorized as authentic or fraudulent.
+[Kaggle.com](https://www.kaggle.com/dalpozz/creditcardfraud) has a data set that consists of over 280,000 anonymized European credit card transactions that have been categorized as authentic or fraudulent.
 
-I created a program (creditcard\_fruad\_analyzer.py in the repo above) that does a comparison between a random forest model and a gradient boost classifier.  The goal of the model is to predict if a charge was fraudulent or real based on 20+ parameters in the table.  The program uses the standard sklearn random forest model and a python implementation of [XGBoost](http://xgboost.readthedocs.io/en/latest/).   
+I created a program (creditcard\_fraud\_analyzer.py in the repo above) that does a comparison between a random forest model and a gradient boost classifier on the credit card data.  The goal of the model is to predict if a charge was fraudulent or real based on 20+ parameters in the table.  The program uses the standard sklearn random forest model and a python implementation of [XGBoost](http://xgboost.readthedocs.io/en/latest/).   
 
 One of the most immediate things that I noticed about XGBoost is the large number of parameters that are available for tuning the model.
 
-I ran the program once without tuning any of the parameters for the gradient boost classifier and got the following results:
+I ran the program once without tuning any of the parameters for the XGBoost classifier and got the following results:
 
 <pre>
                  Results

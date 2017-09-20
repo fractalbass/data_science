@@ -53,7 +53,14 @@ To work on this data, I am returning to my trusty cat Parker.
 I have created some data that represents the amount of time (minutes) Parker spends sleeping during the day; his "NappyTime".  The columns Sunshine and Night_Activity represent the total number of minutes of direct sunlight for that day and the number of minutes of activity that Parker had the night before.  Parker likes to take naps in the sunshine, and he will nap more if he was busy the previous night. 
 
 ```text
-Day	Sunshine	Nite_Activity		NappyTimes1	0		0			752	0		100			3173	0		200			526...34	500		300			59035	500		400			55036	500		500			650 
+Day	Sunshine	Nite_Activity		NappyTimes
+1	0		0			75
+2	0		100			317
+3	0		200			526
+...
+34	500		300			590
+35	500		400			550
+36	500		500			650 
 ```
 
 If the data looks suspicious, that is because it is.  I generated the data with a function that looks like this:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Doing the Impossible - MFCC, HMC and Speech Recognition
+title:  Doing the Impossible - MFCC, HMM and Speech Recognition
 date:   2017-09-14 00:09:00 -0500
 categories: general
 ---
@@ -66,7 +66,7 @@ Out[4]: (111, 26)
 
 This is crucially important.  The 111 rows in this array are the features for MFCC-ized generalized samples within the audio file.  Think of it like this...  we split the file up into a bunch of time chunks.  From there we compute the frequency domain and use the MFCC process to pull out only the most important, relevant frequencies that we hear FOR EACH CHUNK IN THE FILE.  We've decomposed the audio file into a series of snapshots of metadata that we can now consider a sequence.  The next step in this process will be to use Hidden Markov Chains to map these sequences.
 
-# Hidden Markov Chain - HMC
+# Hidden Markov Models - HMM
 
 Andrey Andreyevich Markov, a Russian mathematician from the late 19th century made several important contributions to the study of statistics and probability.  In the process, he worked on the study of sequences of dependent variables, which are now called "Markov Chains".(1) 
 

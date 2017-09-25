@@ -11,7 +11,7 @@ Congratulations!  You have managed to write a deep learning model that actually 
 
 ![Ship in A Bottle...]({{ site.url }}/images/ship_in_a_bottle.jpg)
 
-One of the things that I dislike about raw TensorFlow is that it is build with, and depends on protocol buffers.  Protobufs are a "favorite child" of the brainy folks at Google.  I have several complaints about protobufs that I won't go into here, except to say that they require code generation and make it harder to troubleshoot issues.  Serving models with the google TensorFlow Server requires the use of protobufs.  There is, however, a much easier way.
+One of the things that I dislike about raw TensorFlow is that it is built with, and depends on protocol buffers.  Protobufs are a "favorite child" of the brainy folks at Google.  I have several complaints about protobufs that I won't go into here, except to say that they require code generation and make it harder to troubleshoot issues.  Serving models with the google TensorFlow Server requires the use of protobufs.  There is, however, a much easier way.
 
 Much of the work that I have done with TensorFlow has involved using Keras as a front end to that powerful tool.  TensorFlow itself now includes the Keras library in the core TensorFlow distribution.
 

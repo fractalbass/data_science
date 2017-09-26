@@ -249,11 +249,176 @@ I cannot have a blog post that is about dogs and cats and not feature Parker.
 
 ![parker_again.png]({{ site.url }}/images/parker_again_sm.png)
 
+# Going just one step further...
+
+I was going to leave this post here, but I figured that I would take it to it's natural conclusion.  The goal of having the model running in a web server is to make it available.  So, let's do that.
+
+Amazon has recently come out with an AMI (Amazon Machine Image) that includes a nice collection of pre-installed deep learning tools.  This is handy because it allows us to create machine instances (EC2 Instances) in the Amazon cloud very easily.  From there, it is possible to publicly expose trained deep learning models using the Flask technique that I have outlined above.  
+
+![Flask]({{ site.url }}/images/IAmDeveloper.png)
+
+(A little geeky humor.)
+
+These steps use the [AWS Console](https://aws.amazon.com/console/).  AWS or Amazon Web Services is a cloud provider that we will use to publish our deep learning model server that we created with Flask.  There are other alternative services including Google Cloud Compute, and Microsoft Azure to name a few.
+
+Here are the steps to following to create an EC2 Instance and access it with ssh.
+
+## 1. Launch an instance.
+![AMI_setup]({{ site.url }}/images/1_Launch_Instance.png)
+## 2. Select a Deep Learning AMI
+![AMI_setup]({{ site.url }}/images/2_Select_Deep_Learning_AMI.png)
+## 3. Select the Instance Type
+![AMI_setup]({{ site.url }}/images/3_Instance_Type.png)
+## 4. Set configuration details
+![AMI_setup]({{ site.url }}/images/4_Configuration_Details.png)
+## 5. Set storage.  
+Note: You will have to use 50GB storage for the deep learning AMI, which will bounce you out of the free tier, unfortunately.
+![AMI_setup]({{ site.url }}/images/5_Storage.png)
+## 6. Set the tags.
+![AMI_setup]({{ site.url }}/images/6_Tags.png)
+## 7. Configure the security groups.  
+![AMI_setup]({{ site.url }}/images/7_Configure_Security_Groups.png)
+## 8. Specify a SSH Keypair. 
+(Note:  You need to click on "Launch" on the review page in order to get to the "Select an existing key pair or create a new key pair" dialog below.  I already have a Keypair set up and am using it.  You can create a new one also.  If you are not failure with using using key pairs and ssh to connect to EC2 instances, you can read about it [on Amazon's AWS site.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html) 
+![AMI_setup]({{ site.url }}/images/8_Select_Keypair.png)
+
+## 9. Access the running instance.
+After a few moments our machine will launch in AWS.  To get to that machine, you will need to go to the EC2 instances dialog, and find the public IP address...
+
+![AMI_setup]({{ site.url }}/images/9_Public_IP_Address.png)
+
+For us the address will be 54.208.33.27
+
+Now, login in with ssh using the specified public IP address and the keypair we specified in step 8 above.
+
+```text
+ssh -v -i ./PHG_2016_Keypair.pem ec2-user@54.208.33.27
+```
+
+You should see a bunch of stuff go by and then:
+
+```text
+=============================================================================
+       __|  __|_  )
+       _|  (     /   Deep Learning AMI for Amazon Linux
+      ___|\___|___|
+
+The README file for the AMI ➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜  /home/ec2-user/src/README.md
+Tests for deep learning frameworks ➜➜➜➜➜➜➜➜➜➜➜➜   /home/ec2-user/src/bin
+=============================================================================
+
+Amazon Linux version 2017.03 is available.
+[ec2-user@ip-172-30-0-213 ~]$
+```
+
+# Completing the environment setup
+
+Great!  Now we have a server.  Let's take just a second to poke around...
+
+First, note that GIT is already installed on our server!
+
+```text
+[ec2-user@ip-172-30-0-213 ~]$ git --version
+git version 2.7.4
+```
+
+Also note that we have two versions of Python!
+
+```text
+[ec2-user@ip-172-30-0-213 ~]$ python --version
+Python 2.7.12
+[ec2-user@ip-172-30-0-213 ~]$ python3 --version
+Python 3.4.3
+```
+
+For our purposes, let's set the instance to use Python3 by default...
+
+```text
+[ec2-user@ip-172-30-0-213 dogs_and_cats]$ sudo alternatives --set python /usr/bin/python3.4
+[ec2-user@ip-172-30-0-213 dogs_and_cats]$ python --version
+Python 3.4.3
+```
+
+Now let's check out Keras...  but before we do, let's tell keras to use the TensorFlow backend.  If we don't do that, Keras will default to the mxnet backend. To make the switch, edit the file /home/ec2-user/.keras/keras.json and change the backend from "mxnet" to "tensorflow".  
+
+```text
+{
+    "epsilon": 1e-07,
+    "image_dim_ordering": "tf",
+    "floatx": "float32",
+    "backend": "tensorflow"
+}
+```
+
+To confirm that keras is configured to use TensorFlow, launch python and import that keras package as seen below.  You should see the line "Using TensorFlow backend."
+
+```text
+[ec2-user@ip-172-30-0-213 ~]$ python
+Python 3.4.3 (default, Sep  1 2016, 23:33:38)
+[GCC 4.8.3 20140911 (Red Hat 4.8.3-9)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import keras
+Using TensorFlow backend.
+```
+
+Since the AWS instance, thanks to the AMI, comes pre-configured with git, all we need to do is import our get repo...
+
+```text
+[ec2-user@ip-172-30-0-213 ~]$ git clone https://github.com/fractalbass/dogs_and_cats.git
+Cloning into 'dogs_and_cats'...
+remote: Counting objects: 2227, done.
+remote: Compressing objects: 100% (2219/2219), done.
+remote: Total 2227 (delta 4), reused 2227 (delta 4), pack-reused 0
+Receiving objects: 100% (2227/2227), 59.68 MiB | 16.34 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+Checking connectivity... done.
+[ec2-user@ip-172-30-0-213 ~]$
+```
+
+>Note:  I am skimming over, at a dangerously high level, the involved topics of running Flask servers in AWS, using CI/CD (Continuous Integration and Continuous Deployment), and the larger issue of DevOps best practices.  :)
+  
+Next we need to install some python packages in order to get our server to work...
+
+```text
+sudo pip install Flask
+sudo pip install h5py
+sudo pip install keras --upgrade
+``` 
+(Note:  Keras is installed already, but the version is 1.x.  We need to upgrade the keras to 2.x for our dog_cat_server web app to work.)
+
+Now, we can run our server...
+
+```text
+[ec2-user@ip-172-30-0-213 dogs_and_cats]$ python ./dog_and_cat_server.py
+Using TensorFlow backend.
+Loading model configuration.  One moment...
+...
+=================================================================
+Total params: 1,212,513
+Trainable params: 1,212,513
+Non-trainable params: 0
+_________________________________________________________________
+Configuration loaded.
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+```
+
+Optional: to run the web app in the background, which will allow us to log out of our EC2 instance and not kill the server, do this...
+
+```text
+nohup python dog_and_cat_server.py &
+```
+
+Now we just point our browser at the IP of our EC2 instance and port 8080  (http://54.208.33.27:8080/)
+
+![AMI_setup]({{ site.url }}/images/AWS_DL_Browser_1.png)
+
+![AMI_setup]({{ site.url }}/images/AWS_DL_Browser_2.png)
+
+And there you have it.  Our deep learning model running in AWS.  Clearly, there are a number of things that could be done at this point to harden this environment.  I am going to leave things here as this blog post is now REALLY long.
+
 # Conclusion
 
-So, it is very possible to serve up fairly complex Keras models for image processing that don't require the full blown TensorFlow server, or protobufs.  It maybe that there are situations where processing requirements may force us to a full blow server, or a more complex solution.  That said, I think that there may be value in many application to avoid [premature optimization](http://wiki.c2.com/?PrematureOptimization) in favor of baby steps toward a workable solution.
-
-Granted, this post only goes part of the way there. The next step would be to get a model running on some type of backend system.  Look for that in my next post.
+So, it is very possible to serve up fairly complex Keras model for image processing that don't require the full blown TensorFlow server, or protobufs.  It maybe that there are situations where processing requirements may force us to a full blow server, or a more complex solution.  That said, I think that there may be value in many applications to avoid [premature optimization](http://wiki.c2.com/?PrematureOptimization) in favor of baby steps toward a workable solution.
 
 In the meantime, I wanted to mention that I do have some capacity at this time to help out on data science projects.  If you are looking for additional consultants to help with your data science project (machine learning or whatever) please feel free to contact me at the address below.
 

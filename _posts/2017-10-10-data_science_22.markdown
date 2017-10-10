@@ -69,7 +69,7 @@ One interesting slide in the presentation showed a hypergraph representation of 
 
 The mid-afternoon session that I attend was on using blockchain in health care.  I had come across blockchain in the past, but it was good to have an overview of the technology again.  Mike Jacobs did an excellent job of explaining the technology.  I particularly appreciated his approach to looking at blockchain as it has evolved over time, and separating it from the cryptocurrency Bitcoin.  Bitcoin uses blockchain, but it is a common misconception to say that the two are the same thing.  Mike did a good job of explaining how bitcoin is an implementation of the combination of cryptocurrency and blockchain.
 
-As part of his presentation, Mike offered a chart that shows some of the uses of blockchain in health care and beyond.  (Please excuse the top of the head of the individual in front of me.)
+As part of his presentation, Mike offered a chart that shows some of the potential applications of blockchain in health care and beyond.  (Please excuse the top of the head of the individual in front of me.)
 
 ![Blockchain Use Cases]({{ site.url }}/images/blockchain_uses.jpg)
 (Copyright Optum, Inc. 2017.  Used by permission.)

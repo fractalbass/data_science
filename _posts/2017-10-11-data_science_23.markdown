@@ -7,7 +7,7 @@ categories: general
 
 # Introduction
 
-In my initial look at the R programming environment, I somehow missed information on how to do automated testing.  You can do testing in R quit easily.  The purpose of this blog post is to explore how to do basic automated testing in R.  This post will focus on using the "testthat" package.
+In my initial look at the R programming environment, I somehow missed information on how to do automated testing.  You can do testing in R quite easily.  The purpose of this blog post is to explore how to do basic automated testing in R.  This post will focus on using the "testthat" package.
 
 #  Setting things up
 

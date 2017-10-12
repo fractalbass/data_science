@@ -166,6 +166,7 @@ Some of those topics are covered in more detail in these blog posts:
 Also this book contains some resources for testing R packages:
 
 - [R Packages by Hadley Wickham](http://r-pkgs.had.co.nz/)
+- [An excellent PDF on "testthat" also by Wickham](https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf)
 
 
 Check back soon.  For my next blog post, I am planning on extending the basic R unit testing concepts to R packages.

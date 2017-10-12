@@ -64,7 +64,17 @@ As is probably clear from the above short script, the "testthat" library will pi
 
 > Warning:  This approach will load the code in the source() call...  however, the code that is loaded by source() does not automatically get unloaded.  You can see this clearly if you run your tests in RStudio.  The environment tab will show those functions that are available in the environment.  Before running the test for the first time, the factorial function is not listed.  However, after running the test, factorial() is left hanging around.  Tests that don't clean up after themselves are the bane of any TDDer.  It is not hard to overcome...  if you realize it is happening.
 
-Lastly we need a file that we want to test.  At this point we might be tempted to write code that makes the test pass.  However, it is a good practice to write just enough code so that the test runs, but the tests themselves fail.  After you have a failing test, you can then go back and make the test pass.  One reason for doing this is that by writing the code so that the test fails, you can be assured that you are actually running the test.  For more info on the TDD practice, check out [this blog post on the agile alliance site](http://tinyurl.com/yczhe765).
+Next, we need a file that actually performs the test.  This will be the test_factorial.R file.  All tests in our test directory must start with test* in order to be picked up by the test_dir() statement in our harness.
+
+```R
+test_that("Test factorial", {
+  expect_equal(factorial(1), 1)
+  expect_equal(factorial(2), 2)
+  expect_equal(factorial(3), 6)
+})
+```
+
+Now that we have a harness and a test, we need something to test.  Notice that writing the code to satisfy the test is the LAST thing that we am doing.  At this point we might be tempted to write code that makes the test pass.  It is a good practice, however, to write just enough code so that the test runs but the tests themselves fail.  After you have a failing test, you can then go back and make the test pass.  One reason for doing this is that by writing the code so that the test fails, you can be assured that you are actually running the test.  For more info on the TDD practice, check out [this blog post on the agile alliance site](http://tinyurl.com/yczhe765).
 
 Here is a simple function that runs, but fails our tests.  Some would say that this code "fails in a good way."
 

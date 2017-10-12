@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Automated Testing in R. 
+title:  Automated Testing in R 
 date:   2017-10-10 00:09:00 -0500
 categories: general
 ---

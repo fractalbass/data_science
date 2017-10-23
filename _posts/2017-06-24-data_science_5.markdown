@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Hall of Justice"
+title:  "KMeans Clustering and Crime Data"
 date:   2017-06-24 00:00:08 -0500
 categories: general
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "I feel the earth  - move - under my feet..."
+title:  "Basic Statistical Analysis using R"
 date:   2017-06-20 09:00:00 -0500
 categories: general
 ---

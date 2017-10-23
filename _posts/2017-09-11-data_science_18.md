@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  What's the difference between a saxophone and a lawnmower?
+title:  Analyzing Audio Time Series Data with Fourier Analysis
 date:   2017-09-11 00:09:00 -0500
 categories: general
 ---

@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  Group Think - Boosting Trees
+title:  Boosting Trees
 date:   2017-09-14 00:09:00 -0500
 categories: general
 ---
-
 
 # Introduction
 

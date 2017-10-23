@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Surviving the Titanic"
+title:  "Using Python and Keras on the Kaggle Titanic Data Set"
 date:   2017-07-20 00:08:00 -0500
 categories: general
 ---

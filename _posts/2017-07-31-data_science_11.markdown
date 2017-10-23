@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Neural Net Blues"
+title:  "LSTM Neural Networks and Music"
 date:   2017-07-31 00:10:30 -0500
 categories: general
 ---

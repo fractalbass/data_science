@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Cat Returns"
+title:  "Deep Neural Networks for Image Recognition"
 date:   2017-07-24 00:10:30 -0500
 categories: general
 ---

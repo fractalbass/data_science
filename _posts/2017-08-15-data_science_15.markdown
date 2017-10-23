@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Knuckle Buster Part 2 - Seeing the Forest For the Trees"
+title:  "Data Preprocessing Part 2 and Random Forests"
 date:   2017-08-15 00:14:00 -0500
 categories: general
 ---

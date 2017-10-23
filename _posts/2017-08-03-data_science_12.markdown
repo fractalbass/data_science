@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Watching Paint Dry"
+title:  "Applying Neural Networks to Time Series Data"
 date:   2017-08-9 00:08:30 -0500
 categories: general
 ---

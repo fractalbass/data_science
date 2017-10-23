@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "When Black Friday Comes..."
+title:  "Linear and Polynomial Regression"
 date:   2017-06-21 09:00:00 -0500
 categories: general
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Now What?!  Serving a Trained Keras/TensorFlow Model
+title:  Serving a Trained Keras/TensorFlow Model
 date:   2017-09-25 00:09:00 -0500
 categories: general
 ---

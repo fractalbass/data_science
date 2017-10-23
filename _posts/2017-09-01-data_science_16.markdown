@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Shadows and Light"
+title:  "Data Science Anti-patterns"
 date:   2017-09-06 00:09:00 -0500
 categories: general
 ---

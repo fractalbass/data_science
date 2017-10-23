@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hitting Close to Home - Data on Global Terrorism"
+title:  "Using R to Explore Data on Global Terrorism"
 date:   2017-08-10 00:16:30 -0500
 categories: general
 ---

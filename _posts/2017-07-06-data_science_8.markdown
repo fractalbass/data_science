@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Neural Networks: Saving Humpty Dumpty"
+title:  "Neural Networks and Simple Video Recognition"
 date:   2017-07-14 00:16:00 -0500
 categories: general
 ---

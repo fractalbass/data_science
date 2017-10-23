@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "All the things, you R..."
+title:  "Intro to R"
 date:   2017-06-19 09:36:08 -0500
 categories: general
 ---

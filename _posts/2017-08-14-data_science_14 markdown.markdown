@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Knuckle Buster - Cleaning Up Data"
+title:  "Data Preprocessing Part 1"
 date:   2017-08-14 00:14:00 -0500
 categories: general
 ---

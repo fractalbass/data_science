@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Pandas, Python and DataFrames! Oh My!"
+title:  "Python Pandas and Data Frames"
 date:   2017-06-16 09:36:08 -0500
 categories: general
 ---
 
-# Pandas, Python and DataFrames! Oh My!
+# Python Pandas and Data Frames
 
 I admit it.  Up to now, I have typically used MS Excel when working with data - with some frustration, I might add.  
 

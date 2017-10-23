@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Doing the Impossible - MFCC, HMM and Speech Recognition
+title:  Speech Recognition using MFCC and HMM
 date:   2017-09-14 00:09:00 -0500
 categories: general
 ---

@@ -11,7 +11,7 @@ categories: general
 
 At a recent A.I. meet-up in the Twin Cities, I found myself talking to a couple of other folks.  I made a statement about how so many people mess up the concept of a confidence interval.  [See this post for more details](http://datascience.netlify.com/general/2017/09/06/data_science_16.html).  One of the individuals mentioned that when he interviews potential candidates for positions, he often likes to ask them about what their definition of a p-value is.  I assumed that the p-value he was talking about was the one that I am familiar with from Bayesian techniques ([see this post](http://datascience.netlify.com/general/2017/06/27/data_science_6.html)) where p(A) is the probability of event A occurring.  
 
-I knew that couldn't be it, and so I sheepishly looked at my shoes.  Not one to walk away from not knowing the answer to something that I should, this post is MY "mea culpa".  So, without further ado, lets explore the concept of a p-value.   
+I knew that couldn't be it, and so I sheepishly looked at my shoes.  Not one to walk away from not knowing the answer to something that I should, this post is my "mea culpa".  So, without further ado, lets explore the concept of a p-value.   
 
 #  Probability and Statistics
 

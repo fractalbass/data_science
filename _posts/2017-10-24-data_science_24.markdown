@@ -23,7 +23,7 @@ Let's look at an example:
 
 # Six Sided Die Problem
 
-Let's say that I have a 6 sided die.  Is this die fair if I get 4 sixes when I role the die a total of 36 times?
+Let's say that I have a 6 sided die.  Is this die fair if I get four sixes when I role the die a total of 36 times?
 
 This is a binomial distribution problem and can be written as so:
 
@@ -43,7 +43,7 @@ In order to test this, we need one other piece of information.  That information
 
 So, we will reject our H<sub>0</sub> if:
 
-> Reject H<sub>0</sub> if P(x<=4 | x~B(36,1/6)) <= 0.05
+> Reject H<sub>0</sub> if P(x<=4 \| x~B(36,1/6)) <= 0.05
 
 In this case, I can use this [handy calculator](http://stattrek.com/online-calculator/binomial.aspx) like so...
 

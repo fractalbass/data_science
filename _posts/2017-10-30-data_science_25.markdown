@@ -378,7 +378,7 @@ In order to get the code to actually run in Hadoop, I need to make sure that I p
 
 3.  Writing the code in classes does take on a slight performance hit.  However I believe that this is justified by being able to know that your mappers and reducers are doing what you want them to do.  
 
-4.  The Cloudera Hadoop virtualbox runs on CentOS 6.9.  The default version of python for that distribution of linux is 2.6...  don't change it.  The CentOS 6.9 depends on linux 2.6...  despite that fact that it is several version out of date.
+4.  The Cloudera Hadoop virtualbox runs on CentOS 6.9.  The default version of python for that distribution of linux is 2.6...  don't change it.  The CentOS 6.9 depends on linux 2.6...  despite the fact that it is several version out of date.
 
 
 # Conclusion

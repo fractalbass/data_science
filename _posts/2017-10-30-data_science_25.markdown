@@ -7,7 +7,7 @@ categories: general
 
 # Introduction
 
-![Testing 1, 2, 3]({{ site.url }}/images/multimeter_tdd.JPG)
+![Testing 1, 2, 3]({{ site.url }}/images/TDD_Hadoop.jpg)
 
 The extreme programming practice of test driven development (TDD) was introduced by Kent Beck in 2003.  Since its introduction, TDD has helped to mitigate coding errors in a large number of projects, and is widely considered as a best practice in software development.  TDD is focused on catching bugs early, and protecting against regression errors.  TDD also helps to ensure that code is written in a modular and organized way.
 

@@ -35,7 +35,7 @@ As I mentioned in the introduction, President Trump is a great source for raw tw
 
 ## Obtaining the data
 
-The repo [https://github.com/mkearney/trumptweets]() has instructions for how to download all of the Trump tweets using R.  I particularly enjoyed this part...
+The repo [https://github.com/mkearney/trumptweets](https://github.com/mkearney/trumptweets) has instructions for how to download all of the Trump tweets using R.  I particularly enjoyed this part...
 
 <pre>
 > ## run function to download Trump's twitter archive

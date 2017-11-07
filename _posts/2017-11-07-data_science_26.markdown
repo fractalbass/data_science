@@ -170,7 +170,7 @@ Here are my samples:
 
 Here the average of the sample means is 4.25.  However, the average of the entire population is 4.5.
 
-In the case of the Udacity quiz, we have no idea if the combiners are actually sampling the same number of records.  And, even if they were, the central limit theorem states that the distribution of multiple samples of the same size would be normal.  We cannot simply take random samples from our population, take the mean of the means and say that is the same as the overall all average.  
+In the case of the Udacity quiz, we have no idea if the combiners are actually sampling the same number of records.  And, even if they were, the central limit theorem states that the means of the sample would approach a normal distribution the more samples we have.  We cannot simply take random samples from our population, and then take the mean of those sample means and say that value is the same as the population mean.  Well, I guess we could say that...  but we would be wrong if we did.
 
 The point of the exercise is to show that combiners can help reduce the bottleneck created by a single reducer.  I get that.  It still bothers me a little bit that what they were doing sets a bad precedent for a way to compute the population mean.
 

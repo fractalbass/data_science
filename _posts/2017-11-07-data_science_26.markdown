@@ -176,11 +176,11 @@ The point of the exercise is to show that combiners can help reduce the bottlene
 
 ## A Few Words About Standard Deviation
 
-I had originally planned to look at the combiner quiz question, but use standard deviation rather than sample mean as the topic of this post.  I did that because I thought that using a standard deviation reducer also as a combiner would cause problems.  After thinking about a bit, I realized that I didn't even need to go that far.  
+I had originally planned to look at the combiner quiz question, but use standard deviation rather than sample mean as the topic of this post.  I did that because I thought that using a standard deviation reducer also as a combiner would cause problems.  After thinking about it a bit, I realized that I didn't even need to go that far.  
 
 If we take a moment and look at what happens if we try to compute standard deviation rather than sample mean we can see just how messed up this can get.
 
-First off, let's start with a test for calculating the standard deviation for values in a python list.  Again, numpy would have made this trivial... but I am forced to run on Python 2.6, so no bumpy.  Grrr....
+First off, let's start with a test for calculating the standard deviation for values in a python list.  Again, numpy would have made this trivial, but I am forced to run on Python 2.6, so no numpy.  Grrr....
 
 Anyway, here is a test:
 
@@ -240,9 +240,9 @@ Wednesday	62.2977859358
 
 Hadoop combiners provide an excellent way to optimize results in map reduce jobs.  That said, it is vital that data scientists and big data engineers keep in mind some of the basic rules of statistics when using combiners.  The Udacity course only offers a very brief introduction to the topic, and they set a dangerous precedent for using combiners in conjunction with statistical methods for computing population means.
 
-I hope you have enjoyed this exploration of statistics and Hadoop combiners.  Stay tuned for more topics in data science, machine learning, and related topics.
+I hope you have enjoyed this exploration of statistics and Hadoop combiners.  Stay tuned for more posts on data science, machine learning, and related topics.
 
-The code, such that it is, is available in my github repo:
+The code is available in my github repo:
 
 [udacity_hadoop_playground](https://github.com/fractalbass/udacity_hadoop_playground)
 

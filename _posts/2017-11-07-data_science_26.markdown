@@ -14,7 +14,7 @@ Paintchip Art by [Peter Combe](https://www.ignant.com/2014/10/21/paint-chip-art-
 
 
 
-One of the fundamental pillars of statistics is the central limit theorem, which states:
+One of the fundamental concepts of statistics is the central limit theorem, which states:
 
 > If a sequence of Independent identically distributed random variables each has a finite variance, then as their number increases, their sum (or, equivalently their arithmetic mean) approaches a normally distributed random variable. (1)
 

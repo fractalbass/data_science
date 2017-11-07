@@ -176,9 +176,13 @@ The point of the exercise is to show that combiners can help reduce the bottlene
 
 ## A Few Words About Standard Deviation
 
-While planning this post, I had originally planned to look at the combiner quiz question, but used standard deviation rather than sample mean.  I did that because I thought that using a standard deviation reducer also as a combiner would cause problems.  After working with this, I realized that I didn't even need to go that far.  However, I wanted to take a moment and explore the issue of calculating the standard deviation of the overall population using a single reduce job.
+I had originally planned to look at the combiner quiz question, but use standard deviation rather than sample mean as the topic of this post.  I did that because I thought that using a standard deviation reducer also as a combiner would cause problems.  After thinking about a bit, I realized that I didn't even need to go that far.  
 
-First off, I wanted to start with a test for calculating the standard deviation of a list.  Again, numpy would have made this trivial... but I am forced to run on Python 2.6.  So, here is my test:
+If we take a moment and look at what happens if we try to compute standard deviation rather than sample mean we can see just how messed up this can get.
+
+First off, let's start with a test for calculating the standard deviation for values in a python list.  Again, numpy would have made this trivial... but I am forced to run on Python 2.6, so no bumpy.  Grrr....
+
+Anyway, here is a test:
 
 ```python
     def test_reducer_stdev(self):

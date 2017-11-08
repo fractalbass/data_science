@@ -18,7 +18,76 @@ One of the fundamental concepts of statistics is the central limit theorem, whic
 
 > If a sequence of Independent identically distributed random variables each has a finite variance, then as their number increases, their sum (or, equivalently their arithmetic mean) approaches a normally distributed random variable. (1)
 
-In this post, we will explore how the Central Limit Theorem relates to one of the quizzes of the Udacity Hadoop Mapreduce course.  I believe that the course sets a pretty dangerous precedent with it's very brief, and very wrong implementation of using a mean function as both a reducer and combiner.
+In this post, we will explore the Central Limit Theorem, and a somewhat related phenomenon that relates to one of the quizzes of the Udacity Hadoop Mapreduce course.  I believe that the course sets a pretty dangerous precedent with it's very brief, and very wrong implementation of using a mean function as both a reducer and combiner.
+
+# The Central Limit Theorem
+
+Let's say that we have a population of 1000 values ranging from 0 to 100.  Now, let's say that I take a bunch of random samples of that population, with each sample consisting of 10 values.
+
+The central limit theorem says that the distribution of the means of those samples will approximate a normal distribution.  Also the distribution of the means will get closer to a normal distribution the more samples I take.  Here is some code to illustrate this:
+
+```python
+import random
+import numpy as np
+import matplotlib.pyplot as plt
+
+nums = list()
+num_of_samples = 10
+
+#  Create a population of 1000 items
+for i in range(0,1000):
+    x = random.randint(0,100)
+    print(x)
+    nums.append(x)
+
+
+
+#  Create samples.
+sample_averages = list()
+for i in range(0,num_of_samples):
+    sample = random.sample(nums, 10)
+    a = np.average(sample)
+    print a
+    sample_averages.append(a)
+```
+
+The above code creates my population of 1000 random values that range between 0 and 100.  The code also draws 10 random samples, and computes the averages of those samples.
+
+Now, let's look at a histogram of the samples means (blue), and an approximation of what a normal distribution would look like based on the average and standard deviation of the sample means (red).  First, the code:
+
+```python
+mu = np.average(sample_averages)
+sigma = np.std(sample_averages)
+
+# the histogram of the data
+n, bins, patches = plt.hist(sample_averages, 25, normed=True)
+plt.plot(bins, 1/(sigma * np.sqrt(2 * np.pi)) *  np.exp( - (bins - mu)**2 / (2 * sigma**2) ), linewidth=2, color='r')
+plt.xlabel('Average of Sample')
+plt.ylabel('Count')
+plt.title('Central Limit Theroem')
+plt.show()
+```
+
+Here is the graph for 10 random samples...
+![Paintchipart]({{ site.url }}/images/clt10.png)
+
+It doesn't look like much, but as we increase the number of samples to 50, 250, 500 and 1000 we can start to see what the central limit theorem promises:
+
+50 Samples:
+![Paintchipart]({{ site.url }}/images/clt50.png)
+
+250 Samples:
+![Paintchipart]({{ site.url }}/images/clt250.png)
+   
+500 Samples:
+![Paintchipart]({{ site.url }}/images/clt500.png)
+
+1000 Samples:
+![Paintchipart]({{ site.url }}/images/clt1000.png)
+ 
+As the number of samples increases, our histogram does start to more and more closely match the graph of a normal distribution.
+
+Keep in mind as we move forward that the number of samples that we take remains constant.  We cannot have some samples of 10 items, some of 2, and some of 100.  If we do that, the central limit theorem doesn't apply, and all bets are off.  Also, the central limit theorem only applies to the means of the samples.  It doesn't apply to the standard deviation.
 
 ## Udacity Hadoop Combiners Quiz
 
@@ -28,7 +97,7 @@ The quiz used a data set that contains product sales information.  Each record i
 
 [This site contains a nice overview of what is going on with Hadoop combiners.](https://www.tutorialspoint.com/map_reduce/map_reduce_combiners.htm)
 
-In the exercise, the student first runs a mapper that outputs each sale as the combination of a day of week as the key, and the value of the sale.  My mapper looks like this:
+In the exercise, students are required to write a mapper that outputs each sale as the combination of a day of week as the key, and the value of the sale.  My mapper looks like this:
 
 ```python
 class DOWMapper():
@@ -64,7 +133,7 @@ if __name__ == "__main__":
     mapper.map()
 ```
 
-The reducer then computes the average amount of sales for each day of the week...
+Students are also required to write a reducer that computes the average value of the sales by each day of the week...
 
 ```python
 class DOWReducer():
@@ -132,7 +201,7 @@ The point of the exercise was to use the reducer as a combiner as well to improv
 
 ![Reducer input 1]({{ site.url }}/images/reducer_input_1.png)
 
-Mapreduce jobs consist of multiple mappers but only a single reducer.  For calculating some statistical values, this can be an issue as it puts a lot of computation burden on the reducer.  In order to get around that, combiners can be used.  In the case of the quiz in Udacity, the student is asked to used the reducer as the combiner as well.  The results of doing this are that the workload on the final reducer is much lighter and the job finishes more quickly.
+Mapreduce jobs consist of multiple mappers but only a single reducer.  This can be an issue as it puts a lot of computation burden on the reducer.  In order to get around that, combiners can be used.  In the case of the quiz in Udacity, the student is asked to used the reducer as the combiner as well.  The results of doing this are that the workload on the final reducer is much lighter and the job finishes more quickly.
 
 ![Reducer input 2]({{ site.url }}/images/combine_reduce_input.png)
 
@@ -170,7 +239,7 @@ Here are my samples:
 
 Here the average of the sample means is 4.25.  However, the average of the entire population is 4.5.
 
-In the case of the Udacity quiz, we have no idea if the combiners are actually sampling the same number of records.  And, even if they were, the central limit theorem states that the means of the samples would approach a normal distribution the more samples we have.  We cannot simply take random samples from our population, and then take the mean of those sample means and say that value is the same as the population mean.  Well, I guess we could say that...  but we would be wrong if we did.
+In the case of the Udacity quiz, we have no idea if the combiners are actually sampling the same number of records.  If they were, we would be OK.  But if the number of records in each subset is different, we cannot simply randomly split up our population into non-overlapping samples and then take "the mean of the mean" of those sample means and say that value is the same as the population mean.  Well, I guess we could say that...  but we would be wrong if we did.
 
 The point of the exercise is to show that combiners can help reduce the bottleneck created by a single reducer.  I get that.  It still bothers me a little bit that what they were doing sets a bad precedent for a way to compute the population mean.
 
@@ -242,7 +311,7 @@ Hadoop combiners provide an excellent way to optimize results in map reduce jobs
 
 I hope you have enjoyed this exploration of statistics and Hadoop combiners.  Stay tuned for more posts on data science, machine learning, and related topics.
 
-The code is available in my github repo:
+My code for this post is available in github:
 
 [udacity_hadoop_playground](https://github.com/fractalbass/udacity_hadoop_playground)
 

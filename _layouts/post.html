@@ -14,9 +14,15 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
       {% endif %}</p>
   </header>
+  <div>
+    
+  </div>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
+    <br>Ad here<br>
+    {% include advertising.html %}
+    <br>end of add</br>
   </div>
 
   {% if site.disqus.shortname %}

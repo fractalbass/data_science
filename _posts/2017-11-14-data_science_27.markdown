@@ -144,7 +144,7 @@ Both Z and T tests provide useful tools for evaluating the performance of A/B te
 
 I hope you have enjoyed this blog post on using Z and T tests for evaluating the results of e-commerce A/B testing.  Please check back soon for more posts on topics related to data science.
 
-#References:
+# References:
 
 [Social Science Statistics Calculator](http://www.socscistatistics.com/Default.aspx)
 

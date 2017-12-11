@@ -7,7 +7,7 @@ categories: general
 
 # Introduction
 
-![Google Machine Learning!]({{ site.url }}/images/google_on_the_brain.jpg)
+![Google Machine Learning!]({{ site.url }}/images/google_on_the_brain_2.png)
 
 I have been spending a bit of time lately working on a Kaggle.com challenge related to voice recognition.  More information about the challenge can be found [on the Kaggle site](https://www.kaggle.com/c/tensorflow-speech-recognition-challenge).  My approach can be found in [this blog post](http://datascience.netlify.com/general/2017/11/28/data_science_28.html).  As part of that work, I have been training my neural network models on my local Mac.  Initially, this was not an issue.  However, as the models that I have been working with have become increasingly deep and complex, the amount of time it is taking to train the models is starting to become a drag.  When running the model training routines, my Mac CPU is maxed out and the fan runs non-stop.  That cannot be good for the hardware, I'm sure.
 

@@ -249,6 +249,11 @@ The final accuracy of the model was somewhat disappointing...  around 25 percent
 
 I will post an update to this blog when I have complete that setup.
 
+> Dec 12, 2017:  
+The cloud based approach described in this blog post has resulted in nearly 60% accuracy for the tensorflow voice data challenge, and puts me right in the middle of the pack for people working on the problem!  The increased training has resulted in an improvement of about 4% from my best submission to date.  The cloud based training following this approach took 20 hours and 10 minutes.  
+
+> I have discovered a few things that I hope will increase the accuracy.  I will post those results as I learn more.
+
 I hope you have enjoyed this post on using Google Cloud Machine Learning for training convolutional neural networks that run on Tensorflow and use the Keras framework.  Stay tuned for more blog posts on topics in machine learning and data science!
 
 In the meantime...  If you happen to have lasted through this entire post, thank you.  I am currently looking for my next gig in data science, machine learning, or general application architecture and software development.  (FTE, Contract or Contract to Hire).  Please reach out to me at the email address below if you know of any positions or are interested in chatting with me!

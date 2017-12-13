@@ -8,7 +8,7 @@ categories: general
 # UPDATE TO THIS POST:
 
 > Dec 12, 2017:  
-The cloud based approach described in this blog post has resulted in 59% accuracy for the Tensorflow Voice Data Challenge, which is somewhere in the middle of the pack for people working on the problem!  The increased training has resulted in an improvement of about 3% from my best submission to date.  Training following this approach took 20 hours and 10 minutes on Google Cloud Machine Learning.  
+The cloud based approach described in this blog post has resulted in 59% accuracy for the Tensorflow Voice Data Challenge, which is somewhere in the middle of the pack for teams working on the problem!  The increased training has resulted in an improvement of about 3% from my best submission to date.  Training following this approach took 20 hours and 10 minutes on Google Cloud Machine Learning.  
 
 
 # Introduction

@@ -5,6 +5,12 @@ date:   2017-12-11 00:09:00 -0500
 categories: general
 ---
 
+# UPDATE TO THIS POST:
+
+> Dec 12, 2017:  
+The cloud based approach described in this blog post has resulted in 59% accuracy for the Tensorflow Voice Data Challenge, which is somewhere in the middle of the pack for people working on the problem!  The increased training has resulted in an improvement of about 3% from my best submission to date.  Training following this approach took 20 hours and 10 minutes on Google Cloud Machine Learning.  
+
+
 # Introduction
 
 ![Google Machine Learning!]({{ site.url }}/images/google_on_the_brain_2.png)
@@ -248,9 +254,6 @@ The good news is that by running my build on google, I was free to use my Mac fo
 The final accuracy of the model was somewhat disappointing...  around 25 percent when I submitted it to Kaggle for evaluation.  However, that is not too surprising due to the fact that I only used 1000 training patterns for each category of word.  I will be running the training again on the complete training set and with 100 epochs to see if I can increase my accuracy.
 
 I will post an update to this blog when I have complete that setup.
-
-> Dec 12, 2017:  
-The cloud based approach described in this blog post has resulted in nearly 60% accuracy for the tensorflow voice data challenge, and puts me right in the middle of the pack for people working on the problem!  The increased training has resulted in an improvement of about 4% from my best submission to date.  The cloud based training following this approach took 20 hours and 10 minutes.  
 
 > I have discovered a few things that I hope will increase the accuracy.  I will post those results as I learn more.
 

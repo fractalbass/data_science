@@ -11,9 +11,9 @@ categories: general
 
 ## Introduction
 
-Over the past few months, I have worked on several deep learning projects.  In each case, one thing has become obivous to me.  Deep learning requires significant processing power.  I have, in the past, used my 2015 MacBook Pro for training deep learning models.  In some cases, the models that I have worked with have taken upwards of 6 hours to train.  Since much of what I have been doing is really based on experimentation, waiting 6 hours to see if something worked is a drag...  no pun intended.
+Over the past few months, I have worked on several deep learning projects.  In each case, one thing has become clear to me.  Deep learning requires significant processing power.  I have, in the past, used my 2015 MacBook Pro for training deep learning models.  In some cases, the models that I have worked with have taken upwards of 6 hours to train.  Since much of what I have been doing is really based on experimentation, waiting 6 hours to see if something worked is a drag...  no pun intended.
 
-This past month, I decided to build my own dedicated deep learning computer to see if I could speed things up a bit.  Based on what I had read, using a dedicated graphs processing unit (GPU) really speeds up the time it takes to train neural networks.  Also, having a separate computer for training models would free up my Mac for other things like writing blog posts and recording music.
+This past month, I decided to build my own dedicated deep learning computer to see if I could speed things up a bit.  Based on what I had read, using a dedicated graphical processing unit (GPU) really speeds up the time it takes to train neural networks.  Also, having a separate computer for training models would free up my Mac for other things like writing blog posts and recording music.
 
 The first step was to come up with a plan.  Mine was simple.  I knew I wanted to run Ubuntu 16.04, and I knew that I was going to use an Nvidia GPU...
 
@@ -62,7 +62,7 @@ $189.00
 
 (I used [pcpartspicker.com](pcpartspicker.com) to come up with my initial list.)
 
-I needed to get the parts ordered fairly quickly for tax purposes (as this was a business expense) and so I ended up taking my parts list to Microcenter.  The sales person was extremely knowledgable and helpful and was able to prevent me from making a few key mistakes.  The first mistake was that I picked out a motherboard that would not work with the Nvidia GPU.  The second mistake I made was hat I picked out a cool, but would not have had sufficient cooling capacity.  The sales person recommended a different motherboard and a different case that ended up dropping the price a bit.  I also purchased an extended warranty (I know...  I may have been a sucker on that one) for the Nvidia card.  That GPU was almost 50% of the total cost of the machine.  I wanted to be extra sure that if something happened to it, I would be able to get it replaced.  Here is the final list of parts I ended up with:
+I needed to get the parts ordered fairly quickly for tax purposes (as this was a business expense) and so I ended up taking my parts list to Microcenter.  The sales person was extremely knowledgeable and helpful and was able to prevent me from making a few key mistakes.  The first mistake was that I picked out a motherboard that would not work with the Nvidia GPU.  The second mistake I made was that I picked out a cool looking case, but that case would not have had sufficient cooling capacity.  The sales person recommended a different motherboard and a different case.  Those two things and a few other substitutions ended up dropping the price a bit.  I purchased an extended warranty (I know...  I may have been a sucker on that one) for the Nvidia card.  That GPU was almost 50% of the total cost of the machine.  I wanted to be extra sure that if something happened to it, I would be able to get it replaced.  Here is the final list of parts I ended up with:
 
 
 !!!  I BOUGHT THESE PARTS  !!!

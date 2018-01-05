@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " Building a Deep Learning Desktop PC Part 2"
-date:   2018-1-1 00:09:00 -0800
+date:   2018-1-3 00:09:00 -0800
 categories: general
 ---
 

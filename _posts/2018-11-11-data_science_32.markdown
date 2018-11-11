@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Rotations about the origin with a transformation matrix"
-date:   2018-11-1 00:09:00 -0800
+title:  "Reflection Across a Line With Python and Linear Algebra"
+date:   2018-11-11 00:09:00 -0800
 categories: general
 ---
 

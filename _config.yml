@@ -22,5 +22,11 @@ theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
+  - "vendor"
+  - "publish.sh"
+  - "README.md"
+  - "package.json"
+  - "docker_jekyll.sh"
+
 google_analytics:
   tracking_code: UA-60697451-2 # Replace this with your actual tracking code

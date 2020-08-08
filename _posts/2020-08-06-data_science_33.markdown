@@ -37,13 +37,13 @@ If we consider the above matrix to be X, then we can construct a linear transfor
 
 $$PX=Y$$
 
-Now, the columns of X, or the $x_i$ are our original data set.  Likewise, the columns of Y, or the $y_i$ are our transformed data.  Our goal in PCA is to come up with a matrix P that transforms X into Y.  What we are after can be considered a "change of basis".
+Now, the columns of $$X$$, or the $$x_i$$ are our original data set.  Likewise, the columns of $$Y$$, or the $$y_i$$ are our transformed data.  Our goal in PCA is to come up with a matrix $$P$$ that transforms $$X$$ into $$Y$$.  What we are after can be considered a "change of basis".
 
 When we create the transformation matrix, we are going to want to accomplish a few things including finding and removing any unnecessary data.  In the example above, it is clear that there are 2 dimensions that underly the data.  If you imagine a third axis, it could be possible that we could reduce the data down to just two dimensions and still retain most of the valuable data.  Figures 3a and 3b show a version of the above data in three dimensions.  Here, clearly the Z axis is redundant as it represents very little new information that isn't already present in the Y axis.
 
 ![Figure 3a](/images/Figure_3a.png)
 
-![Figure 3b](/images/Figure_3b.png)
+![Figure 3b](/images/Figure_3b.png
 
 ## Covariance
 
@@ -51,7 +51,7 @@ Covariance is a measure of the linear relationship between two variables.  We ca
 
 $$C_x=\frac{1}{n}XX^T$$
 
-The above matric $C_x$ is a symetric MxM matrix and the diagonal of $C_x$ are the variance of the individual dimensions of the data.  The off-diagonal terms of $C_x$ are the covariances between the different dimensions.
+The above matrix $$C_x$$ is a symmetric MxM matrix and the diagonal of $$C_x$$ are the variance of the individual dimensions of the data.  The off-diagonal terms of $$C_x$$ are the covariances between the different dimensions.
 
 Now, if we can accomplish the following:
 
@@ -61,7 +61,7 @@ There are multiple ways to derive the matrix P above including eigenvector decom
 
 ## Eigenvector Decomposition
 
-We would like to find some orthonormal matrix $P$ in $Y=PX$ such that  $$C_y=\frac{1}{n}YY^t$$ is a diagonal matrix.  In this case, the rows of P are the principal components of $$X$$.
+We would like to find some orthonormal matrix $$P$$ in $$Y=PX$$ such that  $$C_y=\frac{1}{n}YY^t$$ is a diagonal matrix.  In this case, the rows of P are the principal components of $$X$$.
 
 $$C_y=\frac{1}{n}YY^T$$
 
@@ -73,7 +73,7 @@ $$=P(\frac{1}{n}XX^T)P^T$$
 
 $$=PC_XP^T$$
  
-It can be shown that any symmetric matrix $A$ is diagonalized by an orthogonal matrix of its eigenvectors.  This can be denoted as:
+It can be shown that any symmetric matrix $$A$$ is diagonalized by an orthogonal matrix of its eigenvectors.  This can be denoted as:
 
 $$A=EDE^T$$
 
@@ -91,11 +91,13 @@ $$=(PP{-1})D(PP^{-1})$$
 
 $$C_Y=D$$
 
-The above shows that with this choice of P, namely that it is a matrix where each row is an eigenvector of $$\frac{1}{n}XX^T$$, 
+The above shows that with this choice of P, namely that it is a matrix where each column is an eigenvector of $$\frac{1}{n}XX^T$$, those eigenvectors are the principal components of our data X.  Furthermore, for the matrix $$C _y$$, the entries on the diagonal are the variance of X along the $$p_i$$ component.  
 
-Fortunately, the sklearn library for python makes the linear algebra calculations quite easy.  You can read more about that library here:  
+Calculating the PCA for a dataset, X, with python's Numpy library is not too difficult.  But, to make things even easier, the sklearn library for python makes the calculations very simple.  
 
-https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html
+
+
+[Sklearn Principal Component Analysis library](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html)
 
 Utilizing that library, it is relatively easy to write python code to view the principal components of our data.  Here is an example of the principal component analysis done using python on the data described above:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reflections on Georgia Tech OMSA Program"
-date:   2021-12-227 00:09:00 -0800
+date:   2021-12-27 00:09:00 -0800
 categories: general
 ---
 

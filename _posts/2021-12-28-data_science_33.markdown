@@ -140,3 +140,16 @@ The students in the program are from diverse backgrounds, countries and cultures
 
 I would encourage anyone looking for an affordable masters degree in analytics to look into the program.  It is challenging, but well worth the effort.
 
+---
+
+## Acknoledgements
+ 
+I would like to thank Mac Johnson, Thom Dietrich, and Adam Selke for writing letters of recommendation on my behalf as part of my application to the program.  I would like to thank my classmates and teammates especially Christy, Serena, Mark, Nancy, Kim, Andrew and Laura for their helpful hints and encouragement.  I would also like to thank all the professors, instructors, and TAs that helped me learn so much. 
+ 
+Thanks to Jacob Osterman, Thomas Fansler, Jim Coleman and Michael N. Smith for their support on behalf of my employer, Trimble, Inc.  Special thanks also to Anne Hunt for her support and encouragement throughout the program and setting an example of getting your masters done while working full time!
+ 
+I would especially like to thank my kids for tolerating their dad doing homework while on vacation and the weekends, and putting up with my jokes.
+ 
+Lastly, and most importantly, I would like to thank my wife, Tracy B. Porter, for suggesting that I apply to the program, for her tolerance of me when I was less than at my best, and for always believing in me and supporting me regardless of what degrees I hold.  (I love you)^3.
+
+

@@ -19,28 +19,34 @@ Prior to the OMSA program, I worked professionally as a computer network enginee
 
 I applied to the program in the Spring of 2018, and was accepted on August 8, 2018. My first semester was Spring of 2019.  However, that fall I enrolled in the EdX public course for CSE6040, Python Programming for Analytics.  I essentially audited the CSE6040 course that fall semester.  
 
-# Semester 1 (Spring 2019):  CSE6040 “Computing for Data Analytics” and ISYE6501 “Introduction to Analytics Modeling”
+---
+
+# Semester 1 (Spring 2019):  CSE6040 Computing for Data Analytics
 
 As mentioned above, I audited CSE6040 the prior semester.  As a result, the homework assignments were all essentially the same.  That made the course significantly easier.  The exams, however, were not the same.  The midterm and final exams were take-home exams, and were timed.  Those exams were extremely difficult.  I spent well over 8 hours on the midterm exam, and over 10 hours on the final.  The exams were auto-graded, which made them somewhat easier.  IMO, the exams were too difficult.  They didn’t really test the content that was covered in the course.  
 
-### Topics covered:  
+## Topics covered:  
 (Most topics were done in Python.)  Python Review, Pairwise Association, Math/Floating Point Calculation, Web Mining, Pandas, Visualization, Relational Data, NumPy/SciPy, Ranking, Linear Regression, Classification, Clustering, Compression/Dimensionality Reduction, Eigenfaces.
 
-## ISYE6501
+# ISYE6501 Introduction ot Analytics Modeling
 
 Intro to Modeling was one of the best courses that I took in the program.  This course covered topics in machine learning (supervised and unsupervised) time series analysis, PCA (at a high level), basic simulation and optimization.  The course focused on R initially, and then later incorporated python.  Dr. Sokol’s presentations were outstanding, and the TAs were particularly helpful in this course.  I hated R going into this course, and had very little experience with it.  I now really like R, and use it extensively particularly for exploratory data analysis.
 
 After I completed the semester, I swore that I would NOT take two courses again at the same time in the program after I took ISYE6501 and CSE6040 at the same time.  Despite the fact that audited CSE6040 prior the semester, the amount of work was extreme.  I would strongly discourage anyone from taking them together unless you have a great deal of time.  
 
-### Topics Covered:
+## Topics Covered:
 (Most topics were done with R.)  Classification, Validation, Clustering, Dimensionality Reduction, Time Series (ARIMA), Basic Regression, Advanced Data Prep, Advanced Regression, Tree-based models, Variable Selection, Design of Experiments, Probability based models, Optimization, Specific Use Cases
+
+---
 
 # Semester 2  (Summer 2019):  MGT8803 Business Fundamentals for Analytics.
 
 Having wrapped up the two courses in the spring, I next took the business fundamentals course.  I didn’t have much academic experience with business courses, but I figured that it would not be too difficult.  I was wrong.  The Business Fundamentals course was very challenging due to my complete lack of any accounting or other business experience.  This course touched on reading balance sheets, understanding where different business accounts would be listed.  It also covered topics in accounting like economic value and net-present value.  The course touched on difference-in-difference and regression analysis particularly as they related to business topics (for example alpha and beta values of stocks, as well as the capital asset pricing model.  The semester ended with a section on business strategy.  I just barely made an A in this course.  It was FAR more difficult than I expected… that said, I did find it very interesting.  This course was a big reason that I decided to focus on the business track in the OMSA program.  Contrary to what many people think, some of the business courses in the program are VERY challenging.  (In all fairness, some of the business courses are fairly easy.)
 
-### Topics Covered:
+## Topics Covered:
 Financial Accounting, Managerial Accounting, Financial Analytics Techniques, Entrepreneurial Finance, Business Strategy.
+
+---
 
 # Semester 3 (Fall 2019):  ISYE 6644 Simulation.
 
@@ -48,24 +54,31 @@ My third semester in the program was spent taking simulation.  Based on the name
 
 Despite being really difficult, Simulation was the most enjoyable course in my OMSA program.  Dr. Goldman is absolutely hilarious.  And, as he states, there is always a curve.  This was the only B I received in the OMSA program… and I worked extremely hard for that B.  
 
-### Topics Covered:  
+## Topics Covered:  
 Whirlwind Tour of Simulation, Bootcamps (Calculus, Integration, Probability, Simulating Random Variables, Expected Values, Functions of Random Variables, Jointly Distributed Random Variables, Conditional Expectations, Covariance and Correlation, Probability Distributions, Limit Theorems, Estimation, Maximum Likelihood, Confidence Intervals, Differential Equations, Monte Carlo Integration, Simulating Pi, Single Queue Servers, Inventory Systems (s,S), Simulating Random Variables, Simulation using Spreadsheets.  General Simulation Principles, Arena Simulation Language, Random Variable Generation, Bivariate Random Variable Generation, Input Analysis, Output Analysis, Comparing Systems (statistical testing).  (See what I mean.  It was tough!)
+
+---
 
 # Semester 4 (Spring 2020): ISYE 6414 Regression Analysis.
 
 There are two kinds of people in the OMSA program, those that really like Dr. Serban, and those that don’t.  Personally, I really enjoyed this course.  There is a great deal to regression, and Dr. Serban’s course goes much deeper than the ISYE6501 introduction to the topic.  I use material that I learned in this course as part of my job.  Frankly, I think it should be a required course for the OMSA program.  You can read more about this course in OMSCentral, but from my perspective, this was a good course.  The workload was reasonable, but not too light.  The midterm was VERY challenging, but the final was a bit easier.  I think this was a solid course.
 
-### Topics Covered:
+## Topics Covered:
 (Most programming was done in R.)  Linear Regression and ANOVA, Multiple Linear Regression (Estimation and Statistical Inference), Generalized Linear Models (Logistic, Poisson, etc.), Variable Selection.
+
+---
 
 # Semester 5 (Summer 2020):  MGT 6203 Data Analytics for Business
 
 I have mixed feelings about this course.  When I took it, it was the last time they were offering it prior to re-working the content.  The course was significantly easier than business fundamentals, but it was sort of all over the place.   
 
-### Topics Covered:
+## Topics Covered:
+
 Linear Regression, Indicator Variables and Interaction Terms, Nonlinear Transformation Models, Logistic Regression, Randomized Controlled Experiments and Natural Experiments, Introduction to Measuring Risk, Factor Investing, Marketing and Advertising, Integrated Digital Marketing and Predictive Marketing, Managing Queues, Forecasting Demand, Statistical Process Control, and Inventory Management.  Please note:  This course has since been reworked.  The topics are now likely very different from those above.
 
-# Semester 6 (Fall 2020):  ISYE 6740 (Computation Data Analytics) MGT 8823 (Continuous Improvement)
+---
+
+# Semester 6 (Fall 2020):  ISYE 6740 Computation Data Analytics
 
 Computational data analytics was a very challenging course, and covered a number of models that were touched on in ISYE6501, but in much more depth.  Dr. Xie was by far the most responsive professor I had in the OMSA program.  She DIRECTLY answered questions, and didn’t completely rely on TAs.  That was really great.  The course did at least one mathematical proof that was very challenging.  The homework assignments were NOT easy, but doable.  I was fortunate to have a study partner in this course to bounce ideas off of, and to get clarification.  
 
@@ -73,14 +86,18 @@ Actually, a word about study partners.  I very much followed the Georgia Tech ho
 
 For this program, I also did a project that involved analysis of audio data.  I was very proud of this work, and it led to further research in this area that eventually was the topic for a patent that I submitted on behalf of my employer.  I am proud of that work, and thankful that my academic research as part of 6740 helped form the basis of my further research and patent application.
 
-### Topics Covered:
+## Topics Covered:
+
 Clustering and K-Means, Spectral CLustering, PCA and Nonlinear Dimensionality Reduction, Density Estimation, Gaussian Mixture and EM Models, Basics of Optimization Theory, Naïve Bayes Classification, Logistic Regression, Support Vector Machines, Feature Selection, Anomaly Detection, Boosting Algorithms and AdaBoost, Random Forest, Bias-Variance Tradeoff, Special Project. 
 
-## Continuous Improvement: 
+# MGT8823 Continuous Improvement: 
+
 Continuous Improvement is an interesting course.  The individual who appeared in the videos for the course (and calls himself a “professor”) no longer teaches at Georgia Tech.  The video lecturer didn’t hold a PhD, but rather is/was a Six Sigma Master Blackbelt.  The actual professor for the course (responding to comments, and grading assignments with his TAs) was OK, but I don’t know if he was entirely prepared for the course.  The best part of this course was reading “Moneyball”, and doing reports on it.  The worst part of this course, frankly, was the assignments and the videos.  I found the instructor to be borderline offensive, though I don’t think that was his intention.  I did get some value out of this course, and the six sigma approach.  Unfortunately, the instructor (in the videos) didn’t resonate with me.  As part of this course, I was awarded a Six Sigma Yellow Belt.
 
-### Topics Covered:
+## Topics Covered:
 Develop and categorize KPIs, Understand Y f(x), Identify Y and X variables, Analyze Y f(x) relationships, Apply the four methods of continuous improvement (DMAIC, Lean, DFSS-DMADV, “GO DO!”), utilize Lean and Six Sigma techniques, apply the DMAIC methodology.
+
+---
 
 # Semester 7 (Spring 2021):  CSE 6242 (Data and Visual Analytics)
 
@@ -88,17 +105,20 @@ Oh boy.  This course has a reputation for being a killer… and it is well earne
 
 One thing to note here is that, just when you thought that the difficult part of the course was over, Homework 4 includes implementing both the Page Rank and Random Forest algorithms from scratch.  Many students that I know of didn’t complete the Random Forest question… or even come close.  That homework assignment was brutal.
 
-### Topics Covered:
+## Topics Covered:
 Analytics Building Blocks, Data Science Buzzwords, Data Collection, SQLite, Data Cleaning, Data Integration, Visualization (D3), Hadoop, Pig, Hive, Spark, HBase, Classification, Clustering, Graph Methods, Ensemble Methods, Text Analytics, Pagerank, Random Forest (from scratch.)
+
+---
 
 # Semester 8 (Summer 2021):  MGT 6311 (Digital Marketing)
 
 I thought that Digital Marketing would be a cakewalk and not be that interesting.  It was surprisingly challenging and very interesting.  The course covered various topics in digital marketing, and included a number of specific case studies.  I found the case studies to be really interesting, and it was so great to study actual current events and business processes.  Teaching a course like this is incredibly difficult simply because the topic evolves so quickly.  The instructor took the time to try and keep everyone up to speed on current events, and religiously held office hours to discuss the content and timely topics in digital marketing.  The worst, but most valuable part of this course was the fact that I made a mistake when setting up a Google Analytics account to promote my blog, datascience.netlify.com.  I ended up spending $300 by mistake. I won’t make that mistake again… but on the bright side, I did learn a valuable lesson.
 
-### Topics Covered:
+## Topics Covered:
 
 Digital marketing strategy, online brand building and storytelling, social media marketing, online lead generation, mobile marketing, digital thought leadership.
 
+---
 
 # Semester 9 (Fall 2021):  MGT 6748 (Business Analytics Practicum)
 
@@ -107,6 +127,8 @@ I just completed this course.  It was, as many have said, whatever you put into 
 My experience with the practicum really came down to having a good person to work with at my company.  My project involved building analytic tools for construction project managers based on cost flow projections.  This work was not new research, but built on some prior research.  My final report was about 5 pages long, and included a bunch of graphs and diagrams.  
 
 The worst part of this course was the time delay between when I completed the course, and when I finally received my grade.  This was almost a month of waiting on pins and needles for my final grade.  The VAST majority of people that take the practicum get an A.  That said, when it is your last grade required for the Masters Degree that is 30 years overdue, you tend to be a bit nervous.
+
+---
 
 # Conclusion
 

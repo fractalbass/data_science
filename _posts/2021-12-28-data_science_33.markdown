@@ -28,7 +28,7 @@ As mentioned above, I audited CSE6040 the prior semester.  The homework assignme
 # Topics covered:  
 (Most topics were done in Python.)  Python Review, Pairwise Association, Math/Floating Point Calculation, Web Mining, Pandas, Visualization, Relational Data, NumPy/SciPy, Ranking, Linear Regression, Classification, Clustering, Compression/Dimensionality Reduction, Eigenfaces.
 
-## ISYE6501 Introduction ot Analytics Modeling
+## ISYE6501 Introduction to Analytics Modeling
 
 Intro to Modeling was one of the best courses that I took in the program.  This course covered topics in machine learning (supervised and unsupervised) time series analysis, PCA (at a high level), basic simulation and optimization.  The course focused on R initially, and then later incorporated python.  Dr. Sokol’s presentations were outstanding, and the TAs were particularly helpful in this course.  I hated R going into this course, and had very little experience with it.  I now really like R, and use it extensively particularly for exploratory data analysis.
 

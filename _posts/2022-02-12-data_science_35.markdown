@@ -42,4 +42,4 @@ Yeah, ok.  To me, the above just seems like an attempt to glorify the term "data
  
 ## Disclaimer
  
-Again, this is just my worldview based on my academic work and what I see in my career.  It likely will not fit with everyone else, and I am just fine with other definitions.
+Again, this "mental map" based on my academic work and what I see in my career.  It likely will not fit with everyone else, and I am just fine with other definitions.

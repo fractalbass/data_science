@@ -39,7 +39,9 @@ To me, the term Data Science is redundant.  The scientific method involves colle
 Wikipedia defines data science as:  "Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from noisy, structured and unstructured data,and apply knowledge and actionable insights from data across a broad range of application domains. Data science is related to data mining, machine learning and big data."
  
 Yeah, ok.  To me, the above just seems like an attempt to glorify the term "data science."  That said, I am ok with someone saying "I am doing data science!", if they are using data and following the scientific method.
- 
+
+The fact that I am being negative about the term "data science" on a blog that is hosted at datascience.netlify.app isn't lost on me.  When I first started writing this blog, I was very excited about the term.  As I have gained more knowledge in this space, I have also come to realize how huge it is and how much there is that I don't know.  I am tempted to say that, if I had it to do all over again, I may not use "datascience" in the name of my blog.  That, however, wouldn't be truthful.  The term "data science", for better or worse, seems to have stuck.  And, that is fine.  I will just go on writing about topics in Analytics on my blog:  "datascience.netlify.app"!
+
 ## Disclaimer
  
 Again, this "mental map" based on my academic work and what I see in my career.  It likely will not fit with everyone else, and I am just fine with other definitions.

@@ -44,4 +44,4 @@ The fact that I am being negative about the term "data science" on a blog that i
 
 ## Disclaimer
  
-Again, this "mental map" based on my academic work and what I see in my career.  It likely will not fit with everyone else, and I am just fine with other definitions.
+Again, this "mental map" is based on my academic work and what I see in my career.  It likely will not fit with everyone else, and I am just fine with other definitions.

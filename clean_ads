@@ -1,0 +1,32 @@
+#!/usr/bin/env php
+<?php
+function clean($dirty)
+{
+    if (!$dirty = trim(preg_replace('/(\#.*)$/', '', $dirty)))
+    {
+        return null;
+    }
+    $tokens = array_map('trim', explode(',', $dirty));
+    return implode(',', $tokens);
+}
+$input = fopen($argv[1], 'r');
+$output = [];
+while (!feof($input))
+{
+    if (!$dirty = trim(fgets($input)))
+    {
+        continue;
+    }
+    if (!$clean = clean($dirty))
+    {
+        continue;
+    }
+    $output[] = $clean;
+}
+fclose($input);
+sort($output);
+$uniques = array_unique($output);
+foreach ($uniques as $line)
+{
+    echo $line . "\n";
+}

@@ -53,7 +53,7 @@ The [OpenAI Gym Lunar Lander](https://gym.openai.com/envs/LunarLander-v2/) code 
 
 As missions are flown by the novice and expert agents, the state values of the game are saved.  Each mission is saved as an individual file.  Each of these files, then, can be thought of as a  multidimensional time series.  For the purposes of this paper, we looked specifically at just two parameters of the state, specifically the X and Y values of the lander.  The goal of this paper was to focus just on univariant time series data.  Therefore, it is necessary to take the X and Y values and somehow map them into a single value.  In order to create this mapping, we first derive the velocity of the lander in the X and Y directions. Once the velocity has been calculated, the magnitude of the velocity $ M $ of the lander is calculated based on the simple formula 
 
-$ m_{i,t} = f(x_{i,t},y_{i,t} = \sqrt{x_{i,t}^2 + y_{i,t}^2} $
+!['TS Formula']({{ site.url }}/images/ts_formula.png)
 
 Where i is the i'th mission of the lander and t is the time step for the i'th mission.
 

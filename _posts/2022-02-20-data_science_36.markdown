@@ -5,7 +5,7 @@ date:   2022-02-20 00:09:00 -0800
 categories: general
 ---
 
-#  Reinforcement Learning meets Time Series CLassification
+#  Reinforcement Learning meets Time Series Classification
 
     What is past is prologue.  (Shakespeare, The Tempest, 1.2)
 
@@ -65,7 +65,7 @@ Here is an example of the velocity for a random novice and random expert flights
 
 Another interesting visualization of the data is to look at the mean and standard deviation of the time series plotted on a graph where the x axis is the mean and the y axis is the standard deviation.  Here, each dot represents one time series or "mission".
 
-!['Expert vs Novice']({{ site.url }}/images/expert_novice_mean_std.png)
+!['Expert vs Novice']({{ site.url }}/images/novice_expert_mean_std.png)
 
 Once the data has been prepared for all of the agents, an 80%/20% train/test split will be used to divide up the data.  While it would be possible to perform some type of cross validation on the data, the simple 80%/20% split will do for now.
 

@@ -51,11 +51,11 @@ The [OpenAI Gym Lunar Lander](https://gym.openai.com/envs/LunarLander-v2/) code 
 
 ## The Data
 
-As missions are flown by the novice and expert agents, the state values of the game are saved.  Each mission is saved as an individual file.  Each of these files, then, can be thought of as a  multidimensional time series.  For the purposes of this paper, we looked specifically at just two parameters of the state, specifically the X and Y values of the lander.  The goal of this paper was to focus just on univariant time series data.  Therefore, it is necessary to take the X and Y values and somehow map them into a single value.  In order to create this mapping, we first derive the velocity of the lander in the X and Y directions. Once the velocity has been calculated, the magnitude of the velocity $ M $ of the lander is calculated based on the simple formula 
+As missions are flown by the novice and expert agents, the state values of the game are saved.  Each mission is saved as an individual file.  Each of these files, then, can be thought of as a  multidimensional time series.  For the purposes of this paper, we looked specifically at just two parameters of the state, specifically the X and Y values of the lander.  The goal of this paper was to focus just on univariant time series data.  Therefore, it is necessary to take the X and Y values and somehow map them into a single value.  In order to create this mapping, we first derive the velocity of the lander in the X and Y directions. Once the velocity has been calculated, the magnitude of the velocity M of the lander is calculated based on the simple formula 
 
-!['TS Formula']({{ site.url }}/images/ts_formula.png)
+M = sqrt(X^2 + Y^2)  
 
-Where i is the i'th mission of the lander and t is the time step for the i'th mission.
+Where X and Y are the velocity in the X and Y directions.
 
 It is possible to use the same approach on the change of the velocity of the lander.  This, of course, is the lander's acceleration.  It is also possible to use the same approach on the change of acceleration of the lander.  The change of acceleration is also commonly referred to as the “Jerk”.  For this exercise, velocity returned the best results.
 

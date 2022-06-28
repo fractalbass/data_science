@@ -30,7 +30,7 @@ Still need to be convinced why MSFT has developed a winning solution for analyti
 - Exploratory Analysis
 - Model Training
 - Experiments
-- Modeling based on massive data
+- Model Training With MASSIVE Data
 - Model Management
 - Model Deployment and...
 - Data
@@ -53,7 +53,7 @@ Once you have data, a critical first step is to actually look at it.  This is so
 
 If you've imported the data, you can simply view the data.  You can also generate a dataset profile, which will provide some nice basics descriptive statistics and graphs for your data set.  You could do this in a jupyter notebook easily enough... but with Azure, you don't even have to do that.
 
-# Modeling Training
+# Model Training
 
 Once you have understood your data, you will eventually want to start building some models.  Azure ML Studio uses the Jupyter notebook paradigm.  You can mix code and documentation in these notebooks as you would expect.  The other option with Azure is to use their "no code" (which is really low code) training pipeline "Designer".  I remember when we looked at this in grad school, and one classmate commented on just how easy and intuitive using the Azure ML designer was for this purpose.  
 
@@ -100,7 +100,7 @@ Check out the full code here for an example:  https://github.com/MicrosoftLearni
 
 Azure ML allows you to use either Azure's own experiments framework, or ML Flow.  ML Flow is an opensource project developed by Databricks.  That said, it seems to me that the Azure framework provides a nicer UI, and more complete functionality.  I have attempted to use MLFlow in the past, and it doesn't do well in corporate environments with complex network topologies.  Plus, MLFlow requires you to run an MLFlow server...  why do that when Azure essentially offers better functionality without the headache of running a python based server.
 
-# Modeling Training with MASSIVE Data
+# Model Training with MASSIVE Data
 
 Training and working with big data is a special challenge in Analytics.  There are a number of different approaches including downsampling the data, or trying to scale up the compute.  But, what do you do if you come across a dataset that is multiple terabytes or petabytes?  An answer to this problem can be found in cluster computing, and Apache Spark is the leading opensource project in this area.  Unfortunately, Apache Spark is notoriously difficult to configure and run.  The complexities of running computing clusters where worker nodes alll have to be coordinated is a challenging task.  AWS attempts to address this problem with ther EMR (Elastic Map Reduce) service... unfortunately that too can be very challenging to get working and very difficult to troubleshoot when it doesn't.  Databricks is a Spark as a Service offering (and company) that makes running Spark very easy.  Databricks also offers data storage solutions that work well with their enhanced Spark solution that makes a ton of sense.  
 
@@ -112,23 +112,23 @@ Azure Databricks is part of the Azure ecosystem, and so it is billed through you
 
 # Model Management
 
-Training models is the fun part of data science and analytics, and models that have been trained are assets.  A lot of time and effort go into creating models, and that investment is manifest in the trained model artifact.  That is why, from a business perspective, it is absolutely impariative that trained models are organized, currated, and the data associated with those models isn't lost.  A huge part of doing data science is running experiments, and seeing if new approaches to solve a data problem result in better results.  But, how can you know what a better result is if you cannot put your finger on what your current model's accuracy was when you trained it?  Azure ML does an excellent job of helping not only keep track of models, but providing a way to walk back from a model running in production, to the description of the how the model was trained, to the actual code that trained the model, the data that it was trained on, and the hyperparameters associated with the training.  This is all part of Azure model management and azure deplopyments.  
+Training models is the fun part of data science and analytics, and models that have been trained are assets.  A lot of time and effort go into creating models, and that investment is manifest in the trained model artifact.  That is why, from a business perspective, it is absolutely imperative that trained models are organized, currated, and the data associated with those models isn't lost.  A huge part of doing data science is running experiments, and seeing if new approaches to solve a data problem result in better results.  But, how can you know what a better result is if you cannot put your finger on what your current model's accuracy was when you trained it?  Azure ML does an excellent job of helping not only keep track of models, but providing a way to walk back from a model running in production, to the description of the how the model was trained, to the actual code that trained the model, the data that it was trained on, and the hyperparameters associated with the training.  This is all part of Azure model management and azure deplopyments.  
 
 ![Azure Model Management]({{ site.url }}/images/az_models.png)
 
-I think that this is something that is difficult to fully appreicate until you are faced with it in real life.  In my early days of messing around with deep learning, I trained a model that had some really good results.  At least, I seem to remember that it had really good results.  After running the model in production for a few months, someone asked me exactually what the training accuracy was.  (Precision, Recall, F1, etc.)  I didn't have that information stored anyway, but I didn't think it would be a problem.  I would just retrain the model.  I was shocked when I saw my metrics after re-training.  They were nowhere close to what I remembered.  I tried and tried, but I could never find the right combination of learning rate, optimizer, etc. that gave me what I needed.  
+I think that model management is something that is difficult to fully appreciate until you are faced with it in real life.  In my early days of messing around with deep learning, I trained a model that had some really good results.  At least, I seem to remember that it had really good results.  After running the model in production for a few months, someone asked me what the training accuracy was.  (Precision, Recall, F1, etc.)  I didn't have that information stored anyway, but I didn't think it would be a problem.  I would just retrain the model.  I was shocked when I saw my metrics after re-training.  They were nowhere close to what I remembered.  I tried and tried, but I could never find the right combination of learning rate, optimizer, etc. that gave me what I needed.  
 
-Again, don't be ME!  Keep track of your models and you results.  This is the path to enlightenment, and Azure ML makes this so easy.
+Again, don't be "ME"!  Keep track of your models and you results.  This is the path to enlightenment, and Azure ML makes this so easy.
 
 # Model Deployment
 
 Once you have a model trained, and the accuracy is acceptable, you are good to go!  Except that you are not.  You are actually not going anywhere.  It is like running 26 miles in a marathon, and not finishing the last 0.2 miles.  Deploying the model is how you leverage the investment that you made by collecting and cleaning data, running experiments, and keeping track of results.  If you don't somehow get that model into a workflow within your organization, you have essentially just wasted a TON of effort.
 
-Unfortunately, for most data scientists, that last 0.2 of the marathon is a merciless uphill climb.  And, for how clever we thought we were with our elastnet feature selection, and our autoregressive integrated moving averages, and our eigenvectors and principal component analysis, we are left staring blankly at a docker build file that just makes no damn sense.  DevOPs is a (black) art... at least to a data scientist.  And... thank the maker for Azure endpoints.  Azure ML provides a very straight forward way to deploy models into production.  This can be done on a single compute instance, or into a kubernetes cluster, all automatically.  The management tools are all there for monitoring the models.  The security protocols have all been worked out so you don't have to reinvent the wheel and fight tooth and nail with JWTs and OAUTH...  unless you want to.  And if you you, bless you.  The approach also allows you to deploy models not only into production but also on your own workstation via Docker.
+Unfortunately, for most data scientists, that last 0.2 miles of the marathon is a merciless uphill climb.  And, for how clever we thought we were with our elastnet feature selection, and our autoregressive integrated moving averages, and our eigenvectors and principal component analysis, we are left staring blankly at a docker build file that just makes no damn sense.  DevOPs is a (black) art... at least to a data scientist.  And... thank the maker for Azure endpoints.  Azure ML provides a very straight forward way to deploy models into production.  This can be done on a single compute instance, or into a kubernetes cluster, all automatically.  The management tools are all there for monitoring the models.  The security protocols have all been worked out so you don't have to reinvent the wheel and fight tooth and nail with JWTs and OAUTH...  unless you want to.  And if you do, bless you.  The approach also allows you to deploy models not only into production but also on your own workstation via Docker.
 
-![Azure Endpoints]({{ site.url }}/images/az_endpoints.png)
+![Azure Endpoints]({{ site.url }}/images/az_endpoint.png)
 
-It is important to keep in mind that when you deploy a model, someone is going to call it.  And, if they call it, they are going to pass in data and expect a result.  That input and output data... and particularly that INPUT data is another resource.  It contains information about your customer that may have insights. And, so we return back right to where we started...
+It is important to keep in mind that when you deploy a model, someone is going to call it.  And, if they call it, they are going to pass in data and expect a result.  That input and output data is another resource.  It contains information about your customer and may yield insights. And, so we return back right to where we started...
 
 # (And it all comes back to) DATA
 
@@ -136,7 +136,7 @@ When a model is deployed in Azure ML, you have the option to capture insights fr
 
 # A Few Comments About "The Future"
 
-Azure ML Studio isn't the only way to work with Azure.  Microsoft has developed fully functional SDK that can be used to configure and manage ML data, components, models, experiments, etc.  As companies develop more ML models, keeping track of those models will only increase in complexity.  Leveraging scripts are a good way to help keep this managable.  This is one of the main ideas behind MLOps.  I think that the cohesive SDK that Microsoft has developed is particularly valuable in this regard.  That said, having a GUI available that allows data scientists focus on solving the problems, and not trying to remember SDK classes and method.  So, there is a balance that needs to be struck.  From what I can see, it seems that Microsoft is doing a good job in that regard.   
+Azure ML Studio isn't the only way to work with Azure.  Microsoft has developed a fully functional SDK that can be used to configure and manage ML data, components, models, experiments, etc.  As companies develop more ML models, keeping track of those models will only increase in complexity.  Leveraging scripts are a good way to help keep this managable.  This is one of the main ideas behind MLOps.  I think that the cohesive SDK that Microsoft has developed is particularly valuable in this regard.  That said, I appreciate having a GUI available that allows me to focus on solving the problems and not on trying to remember SDK classes and methods.  So, there is a balance that needs to be struck.  From what I can see, it seems that Microsoft is doing a good job in that regard.   
 
 
 # Conclusion

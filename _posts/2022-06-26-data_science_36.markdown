@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Azure ML? Seriously?  Yes.  Seriously!"
-date:   2022-06-30 00:09:00 -0800
+date:   2022-06-28 00:09:00 -0800
 categories: general
 ---
  

@@ -22,7 +22,7 @@ I am so happy that Microsoft has helped make it a little easier.
 
 Now, if you would have said to me that I would write that line 5 years ago, I would have said you were crazy.  I have used Microsoft products in the past, but it has always been with some reluctance.  I don’t typically run Windows unless I cannot avoid it (I prefer to use Linux, or a Mac.)  Being a certified Novell Network Engineer (CNE… you young kids can just Google that), I never quite got over the fact that Microsoft basically killed Novell.  
 
-But, with all of those good and less than good reasons, I ended up having to use Azure ML.  I must say that Microsoft has done a very nice job of Machine Learning Platform as a Service.  Add to that how far Azure has come...  Well, if you working in Analytics or Data Science, it might be well worth your time to check out the platform.  And… you can try it out for free!  
+I was somewhat skeptical when, in my current job, I found myself faced with evaluating Azure ML.  I must say that Microsoft has done a very nice job of Machine Learning Platform as a Service.  Add to that how far Azure has come...  Well, if you're working in Analytics or Data Science, it might be well worth your time to check out the platform.  And… you can try it out for free!  
 
 Still need to be convinced why MSFT has developed a winning solution for analytics?  Ok.  I respect that.  Let me offer a few details to consider.  I'll break this down relative to how I tend to think of the analytics process...
 

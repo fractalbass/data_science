@@ -24,7 +24,7 @@ Now, if you would have said to me that I would write that line 5 years ago, I wo
 
 But, with all of those good and less than good reasons, I ended up having to use Azure ML.  I must say that Microsoft has done a very nice job of Machine Learning Platform as a Service.  Add to that how far Azure has come...  Well, if you working in Analytics or Data Science, it might be well worth your time to check out the platform.  And… you can try it out for free!  
 
-Still need to be convinced why MSFT has developed a winning solution for analytics?  Ok.  I respect that.  Let me offer a few details to consider.  I'll break this down relative to how I tend to thing of analytics...
+Still need to be convinced why MSFT has developed a winning solution for analytics?  Ok.  I respect that.  Let me offer a few details to consider.  I'll break this down relative to how I tend to think of the analytics process...
 
 - Data
 - Exploratory Analysis

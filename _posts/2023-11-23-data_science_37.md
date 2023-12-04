@@ -64,7 +64,7 @@ When we do a regression, one of the things that we pay special attention to is t
 
 ![Residual Histogram]({{ site.url }}/images/residuals1.png)
 
-## Random means Not Predictable
+## Random Means Not Predictable
 
 At Georgia Tech, I took a class on business analytics.  It was an interesting, if not a bit scattered course, that covered aspects of finance, digital marketing, and a number of other topics.  One of the best things about the class was the book... that we never used.  (Not sure why.)  The book was “Data Mining for Business Analytics”.  ISBN:  978-1-118-87936-8 by Shmueli, Bruce, Yahav, Patel, and Lichtendahl.   
 

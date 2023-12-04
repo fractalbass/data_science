@@ -5,13 +5,11 @@ date:   2023-11-23 00:09:00 -0800
 categories: general
 ---
  
-# Something Random
-
 Recently, I came across a (very short) book by Andy Weir called Randomize.  You can [get if for free from Amazon](https://www.amazon.com/Randomize-Forward-collection-Andy-Weir-ebook/dp/B07VDJBKNJ).  I won't spoil it for you, but a main theme in the book is random numbers... or really the illusion of random numbers when it comes to computers.  
 
 When I was reading this book (short story might be a better description), it occurred to me that infinity is to calculus what randomness is to statistics and probability.  And, just like in calculus and mathematical analysis where we have different kinds of infinity (countable vs uncountable), there are also different kinds of random numbers.  Here, I am thinking of distributions of random numbers.  When we talk about random numbers we usually think in terms of the so-called uniform distribution.  However, many random distributions exist.
 
-# Not All Random is the Same
+## Not All Random is the Same
 
 Statistics is the study of the properties of samples and using that information to make statements about populations.  When people say "Pick a random number between 1 and 100...", what they typically mean is to pick an integer between 1 and 100, inclusive, where each number has the same chance of being chosen.  It turns out that there are other ways to pick random numbers, however.  Consider this variation on the "Pick a number between 1 and 100 game."
 
@@ -54,7 +52,7 @@ Known as a linear congruential generator, or LCG, the above sequence provides se
 
 One advantage of RANDU was that it was very fast to compute.  However, to see the weakness of RANDU, consider each three consecutive values as coordinates in 3 dimensional space.  The following animation shows the obvious issue RANDU has.
 
-![Randu]({{ site.url }}/images/randu.webm)
+[Randu Video](https://youtu.be/rVWv8Qj7yEE)
 
 ## Randomness and Regression
 
@@ -68,7 +66,7 @@ When we do a regression, one of the things that we pay special attention to is t
 
 ## Random means Not Predictable
 
-At Georgia Tech, I took a class on business analytics.  It was an interesting, if not a bit scattered course, that covered aspects of finance, digital marketing, and a number of other topics.  One of the best things about the class was the book... that we never used.  (Not sure why.)  The book was “Data Mining for Business Analytics”.  ISBN:  978-1-118-87936-8 by Shmueli, Bruce, Yahav, Patel, Lichtendahl.   
+At Georgia Tech, I took a class on business analytics.  It was an interesting, if not a bit scattered course, that covered aspects of finance, digital marketing, and a number of other topics.  One of the best things about the class was the book... that we never used.  (Not sure why.)  The book was “Data Mining for Business Analytics”.  ISBN:  978-1-118-87936-8 by Shmueli, Bruce, Yahav, Patel, and Lichtendahl.   
 
 Towards the end of the book, there is this quote...  “Before attempting to forecast a time series, it is important to determine whether it is predictable, in the sense that its past can be used to predict its future beyond the naive forecast.”
 
@@ -82,11 +80,11 @@ It turns out that there is a really easy technique to determine if a time series
 
 $$ (X_n, X_{n-1}) $$
 
-If the slope of a regression line fit to the above pairs is 1, we have shown that the sequence is a random walk.  Since this is a regression model under the hood, we can also look at the P-value for the coefficient in the underlying model to get a sense of how reliable that coefficient is.  As we mentioned before, making those "goodness of fit" statements relies on the fact that the residuals are independent and identically distributed.  While the values in our time series are NOT independent (each step in the time series depends on the last one), the difference between two successive steps should be.  To see why, look at the definition of a random walk, and move the $X_{n-1}$ term to the left side of the equation.  
+If the slope of a regression line fit to the above pairs is 1, we have shown that the sequence is a random walk.  Since this is a regression model under the hood, we can also look at the P-value for the coefficient in the underlying model to get a sense of how reliable that coefficient is.  As we mentioned before, making those "goodness of fit" statements relies on the fact that the residuals are independent and identically distributed.  While the values in our time series are NOT independent (each step in the time series depends on the last one), the difference between two successive steps should be.  To see why, look at the definition of a random walk, and move the $ X_{n-1} $ term to the left side of the equation.  
 
 $$X_n - X_{n-1} = \epsilon$$
 
-In the above, $\epsilon$ represents random noise.
+In the above, $ \epsilon $ represents random noise.
 
 ## An Example
 
@@ -96,11 +94,11 @@ Here is an interesting example.  Below, I have taken the daily closing values of
 
 Next, using the R programming language, I have fit an ARIMA(1,0,0) model (aka AR(1) as mentioned above) to the data.  
 
-![Trimble image 1]({{ site.url }}/images/trimble_walk_1.png)
+![Trimble image 1]({{ site.url }}/images/trimble_walk_2.png)
 
 As illustrated above, the coefficient is really close to 1.  Continuing on to check the statistical reliability of the coefficient in the model, the P-value is nearly zero.  This means that the coefficient is highly reliable and we are looking at a random walk.
 
-![Trimble image 2]({{ site.url }}/images/trimble_walk_2.png)
+![Trimble image 2]({{ site.url }}/images/trimble_walk_3.png)
 
 The bottom line here is that we have shown the stock above to be an essentially unpredictable random walk.  Any efforts to fit a model based on JUST THIS DATA is not going to work.  Now, that does not necessarily mean that we couldn't find a different model with different predictor variables.  It just means that the sequence itself is not enough to go on when trying to do predictions.  
 

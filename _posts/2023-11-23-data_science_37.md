@@ -4,7 +4,10 @@ title:  "Something Random"
 date:   2023-11-23 00:09:00 -0800
 categories: general
 ---
- 
+
+![Cloudflare Lava Lamps]({{ site.url }}/images/cloud_flare_lava_lamps.png)
+[Source](https://www.cloudflare.com/learning/ssl/lava-lamp-encryption/)
+
 Recently, I came across a (very short) book by Andy Weir called Randomize.  You can [get if for free from Amazon](https://www.amazon.com/Randomize-Forward-collection-Andy-Weir-ebook/dp/B07VDJBKNJ).  I won't spoil it for you, but a main theme in the book is random numbers... or really the illusion of random numbers when it comes to computers.  
 
 When I was reading this book (short story might be a better description), it occurred to me that infinity is to calculus what randomness is to statistics and probability.  And, just like in calculus and mathematical analysis where we have different kinds of infinity (countable vs uncountable), there are also different kinds of random numbers.  Here, I am thinking of distributions of random numbers.  When we talk about random numbers we usually think in terms of the so-called uniform distribution.  However, many random distributions exist.

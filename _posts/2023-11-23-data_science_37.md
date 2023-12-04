@@ -88,7 +88,7 @@ In the above, $ \epsilon $ represents random noise.
 
 ## An Example
 
-Here is an interesting example.  Below, I have taken the daily closing values of a company's stock (it happens to be Trimble, my current employer) from Jan 1, 2021 thru Oct 10, 2023.
+Here is an interesting example.  Below, I have taken the daily closing values of a company's stock from Jan 1, 2021 thru Oct 10, 2023.
 
 ![Trimble image 1]({{ site.url }}/images/trimble_walk_1.png)
 

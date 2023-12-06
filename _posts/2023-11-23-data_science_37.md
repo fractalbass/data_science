@@ -26,7 +26,7 @@ What we are touching on here is the idea of distribution of random numbers.  If 
 
 ## Stochastic vs Deterministic
 
-Random numbers underlie the concept of stochastic models and optimization.  Random, or "stochastic" models stand in contrast to what is often referred to as "deterministic" models, which use a direct approach.  To understand the difference, consider two methods for estimating Pi.  The method that Archimedes used, which involves [transcribing triangles inside of a circle](https://arxiv.org/pdf/2008.07995.pdf) would be considered deterministic.  In the Archimedes algorithm, you don't need any kind of randomness to do the calculations.
+Random numbers underlie the concept of stochastic models and optimization.  Random, or "stochastic" models stand in contrast to what is often referred to as "deterministic" models, which use a direct approach.  To understand the difference, consider two methods for estimating Pi.  The method that Archimedes used, which involves [circumscribing triangles inside of a circle](https://arxiv.org/pdf/2008.07995.pdf) would be considered deterministic.  In the Archimedes algorithm, you don't need any kind of randomness to do the calculations.
 
 In contrast, the so-called "Monte Carlo" method involves randomly adding dots to a square with a circle enclosed inside.  
 

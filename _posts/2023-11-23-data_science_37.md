@@ -60,7 +60,7 @@ One advantage of RANDU was that it was very fast to compute.  However, to see th
 
 In addition to the clearly anti-random 3-dimensional distribution of RANDU, the PRNG also suffers from other issues. The following article does into detail on examining RANDU.  
 
-https://bkamins.github.io/julialang/2020/12/31/randu.html  
+[https://bkamins.github.io/julialang/2020/12/31/randu.html ](https://bkamins.github.io/julialang/2020/12/31/randu.html)
 
 ## Randomness and Regression
 

@@ -11,7 +11,7 @@ categories: general
 
 Recently, I came across a (very short) book by Andy Weir called Randomize.  You can [get if for free from Amazon](https://www.amazon.com/Randomize-Forward-collection-Andy-Weir-ebook/dp/B07VDJBKNJ).  I won't spoil it for you, but a main theme in the book is random numbers... or really the illusion of random numbers when it comes to computers.  
 
-When I was reading this book (short story might be a better description), it occurred to me that infinity is to calculus what randomness is to statistics and probability.  And, just like in calculus and mathematical analysis where we have different kinds of infinity (countable vs uncountable), there are also different kinds of random numbers.  Here, I am thinking of distributions of random numbers.  When we talk about random numbers we usually think in terms of the so-called uniform distribution.  However, many random distributions exist.
+When I was reading this book (short story might be a better description), it occurred to me that infinity is to calculus what randomness is to statistics and probability.  To clarify, being able to compute integrals and derivatives require the ability to handle and manipulate calculations involving infinity.  In probability and statistics, we are often faced with random variables, and chance.  In order to compute probabilities and confidences, we must be able to handle and manipulate calculations involving randomness, and random distributions of various types.  And, just as in calculus and mathematical analysis where we have different kinds of infinity (countable vs uncountable), there are also different kinds of distributions of random numbers.  
 
 ## Not All Random is the Same
 
@@ -19,7 +19,7 @@ Statistics is the study of the properties of samples and using that information 
 
 Pick 30 random numbers between 1 and 100, and compute their average and do that over and over again 100 times and write down the averages."  The list that you write down will be random... but it is a special kind of random. The [Central Limit Theorem](https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html) of statistics tells us that the list of 100 averages will follow a normal distribution.  (The CLT requires that the samples must have a sufficiently large sample size, usually n>=30.)
 
-What we are touching on here is the idea of distribution of random numbers.  If I say pick a random number between 1 and 100, that is called a "uniform" distribution.  However, when I look at the means, I am starting to approximate a different kind of random distribution called a "normal distribution".  There are many other kinds of random distributions.
+What we are touching on here is the idea of distributions of random numbers.  If I say pick a random number between 1 and 100, that is called a "uniform" distribution.  However, when I look at the means, I am starting to approximate a different kind of random distribution called a "normal distribution".  There are many other kinds of random distributions.
 
 ![Random Distributions]({{ site.url }}/images/random_distributions.png)
 [Source.](https://pages.stern.nyu.edu/~adamodar/pdfiles/papers/probabilistic.pdf)
@@ -44,7 +44,7 @@ This approach is considered stochastic as it requires the use of random numbers 
 
 "True" random numbers are not predictable.  Also, sequences of true random numbers are not generally repeatable on demand.  Stochastic algorithms would not be repeatable if they relied on truly random numbers.  And, without repeatability, algorithms that use stochastic processes would be very difficult to test and results would be impossible to confirm.
 
-Digital computers are deterministic machines. Digital circuitry alone is not capable of creating truly random numbers (unless it is malfunctioning).  Nature, however, is full of sources of randomness. To come up with true random numbers computers use devices called true random number generators or TRNGs.  These devices usually involve some physical and analog source of entropy.  True random number generators are very useful when it comes to cybersecurity. An interesting example of one elaborate TRNG was created by the cybersecurity company Cloudflare in 2017.  [You can read more about it here](https://www.cloudflare.com/learning/ssl/lava-lamp-encryption/). For simplicity, speed and repeatability, computers typically rely on algorithms called pseudo-random number generators, often called PRNGs.  PRNGs involve a random seed to start with.  We will see some examples next.
+Digital computers are deterministic machines. Digital circuitry alone is not capable of creating truly random numbers (unless it is malfunctioning).  Nature, however, is full of sources of randomness. To come up with true random numbers computers use devices called true random number generators or TRNGs.  These devices usually involve some physical and analog source of entropy.  True random number generators play a critical role when it comes to cybersecurity. An interesting example of one elaborate TRNG was created by the cybersecurity company Cloudflare in 2017.  [You can read more about it here](https://www.cloudflare.com/learning/ssl/lava-lamp-encryption/). For simplicity, speed and repeatability, computers typically rely on algorithms called pseudo-random number generators, often called PRNGs.  PRNGs involve a random seed to start with.  We will see some examples next.
 
 IBM developed a PRNG in the late 1960s called RANDU.  This once highly regarded PRNG used this formula:
 
@@ -56,7 +56,11 @@ Known as a linear congruential generator, or LCG, the above sequence provides se
 
 One advantage of RANDU was that it was very fast to compute.  However, to see the weakness of RANDU, consider each three consecutive values as coordinates in 3 dimensional space.  The following animation shows the obvious issue RANDU has.
 
-[Randu Video](https://youtu.be/rVWv8Qj7yEE)
+<iframe width="883" height="625" src="https://www.youtube.com/embed/rVWv8Qj7yEE" title="RANDU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+In addition to the clearly anti-random 3-dimensional distribution of RANDU, the PRNG also suffers from other issues. The following article does into detail on examining RANDU.  
+
+https://bkamins.github.io/julialang/2020/12/31/randu.html  
 
 ## Randomness and Regression
 

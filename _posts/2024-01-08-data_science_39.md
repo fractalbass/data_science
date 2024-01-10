@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Collaborating Filtering for Mere Mortals Part 2: A Neural Network Approach"
-date:   2024-01-12 00:09:00 -0800
+date:   2024-01-08 00:09:00 -0800
 categories: general
 ---
 

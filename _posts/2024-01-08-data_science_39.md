@@ -15,7 +15,7 @@ Using matrix factorization and singular value decomposition is just one approach
 
 # The MovieLens Dataset
 
-To demonstrate how this works, I am again using the MovieLens 100k dataset that consists of users, movies and rankings.  Neural network similar to the one in this example are frequently referred to as "deep learning", but IMO it really is not.  The neural networks in question are typically very shallow... though they can be quite "wide".  
+To demonstrate how this works, I am again using the MovieLens 100k dataset that consists of users, movies and rankings.  Neural networks similar to the one in this example are frequently referred to as "deep learning", but IMO it really is not.  The neural network in this example is very shallow... though similar networks can be quite "wide".  
 
 # Network Structure
 
@@ -244,6 +244,11 @@ Item Name: Grease (1978), Actual Value: 3.0, Predicted Value: 3.002894163131714
 </pre>
 
 Here we can see that the network did a pretty good job of nailing the MovieLens 100K dataset.  It should be noted that to train the model on the data took around an hour for 450 epochs.  The collaborative filtering approach that I used in the previous post was significantly faster.  
+
+The following graph shows the training curve for the network.  In the interest of time, I cut the training off at 450 epochs.  The performance of the holdout test set was still improving at that point.
+
+![Simple Network Architecture]({{ site.url }}/images/drml_training_plot.png)
+
 
 # Discussion
 

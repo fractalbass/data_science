@@ -247,7 +247,7 @@ Here we can see that the network did a pretty good job of nailing the MovieLens 
 
 The following graph shows the training curve for the network.  In the interest of time, I cut the training off at 450 epochs.  The performance of the holdout test set was still improving at that point.
 
-![Simple Network Architecture]({{ site.url }}/images/drml_training_plot.png)
+![Network Learning Curve]({{ site.url }}/images/dlmr_training_plot.png)
 
 
 # Discussion

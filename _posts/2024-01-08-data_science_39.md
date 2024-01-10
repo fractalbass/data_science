@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Collaborating Filtering for Mere Mortals Part 2: A Neural Network Approach"
-date:   2024-01-08 00:09:00 -0800
+date:   2024-01-12 00:09:00 -0800
 categories: general
 ---
 
-# A mere mortals guide to collaborative filtering part 2: a neural network approach.
+# Introduction
 
 In my previous post, I wrote about how collaborative filtering works and went through a simple example implementation using the Surprise package in python.  Continuing on with that topic, I wanted to explore an alternative approach to this problem that uses neural networks. 
 
@@ -13,7 +13,7 @@ Recall that our previous approach was essentially about creating a matrix that m
 
 Using matrix factorization and singular value decomposition is just one approach to solving this problem.  Another approach involves using neural networks, or more accurately multi-layer perceptron or "MLPs".
 
-# The dataset in question
+# The MovieLens Dataset
 
 To demonstrate how this works, I am again using the MovieLens 100k dataset that consists of users, movies and rankings.  A number of references out there The neural network in this example is frequently referred to as deep learning, but IMO it really is not.  The neural networks in question are typically very shallow... though they can be quite "wide".  
 
@@ -29,11 +29,11 @@ The key thing to understand here is that an initial "embedding" is taking place 
 
 As with the previous example with collaborative filtering, this approach also suffers from the "cold-start problem."  The cold-start problem refers to the difficult of providing accurate recommendations for new or "cold" users that have limited historical data.  (Yes...  I did lift that from ChatGPT.)  Simply put, in order for us to do inference, we are going to have to have trained our model on at least some information for a given user and item.  
 
-## Introducing factor biases.
+# Introducing Factor Biases
 
 One of the challenges in building models like this is that users and items can suffer from biases.  For example, one user might be particularly generous in their rankings compared to others.  Or, certain items may have been reviewed more times than others.  in the paper "Factorization Meets the Neighborhood: a Multifaceted Collaborative Filtering Model." (Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining (KDD '08), pp. 426-434. DOI: 10.1145/1401890.1401944), author Yehuda Koren presents a way to deal with this situation by introducing a vector for user and item biases.  The presence of this vector can be seen here.  Note that the bias vectors are of length 1.  They are basically a trained value that increases or reduces the overall predictions simply by adding the values to the prediction.  Like the embedding vectors, these values are updated as the network gets trained.
 
-# Code
+# SOme Code
 
 The following includes some code that will train a neural network to make ratings predictions based on the MovieLense 100k dataset.  In this code, I have configured the system to run 450 training epochs.  With my Quadro GP100 (which is a slightly older GPU), this process took about an hour.
 
@@ -243,14 +243,14 @@ Item Name: Grease (1978), Actual Value: 3.0, Predicted Value: 3.002894163131714
 
 Here we can see that the network did a pretty good job of nailing the MovieLens 100K dataset.  It should be noted that to train the model on the data took around an hour for 450 epochs.  The collaborative filtering approach that I used in the previous post was significantly faster.  
 
-# Size Considerations...
+# Discussion
 
-The MovieLens dataset contains 943 users and 1682 items.  Clearly, this is pretty small dataset.  There have been a number of different approach to dealing with this problem including the release of the torchrec package.  Torchrec provides a way to handle embeddings such that they can be better parallelized across multiple machines.  This allows network training to be scaled up to account for larger and larger datasets.  In 2019, Meta (the parent company of Facebook) released an open source solution for dealing with the problem.  Information about that approach can be found [here](https://ai.meta.com/blog/dlrm-an-advanced-open-source-deep-learning-recommendation-model/)
+The MovieLens dataset contains 943 users and 1682 items.  Clearly, this is pretty small dataset.  There have been a number of different approach to dealing with this problem including the release of the [Torchrec](https://github.com/pytorch/torchrec) domain library for Pytorch.  Torchrec provides a way to handle embeddings such that they can be better parallelized across multiple machines.  This allows network training to be scaled up to account for larger and larger datasets.  In 2019, Meta (the parent company of Facebook) released an open source solution for dealing with the problem.  Information about that approach can be found [here](https://ai.meta.com/blog/dlrm-an-advanced-open-source-deep-learning-recommendation-model/).
 
 
 # Conclusion
 
-In this post, I have discussed implementing a neural network based recommender system.  I discussed, at a high level, how the neural network approach in this post differs from the singular value decomposition approach that I covered in my previous post.  I included some examples of the network architecture both in it's basic form, and with an added "bias" feature vector.  I included code written in Python that uses the pytorch framework and that can leverage a GPU.  I shared some initial result of the code showing now the network performed on a random hold-out test set.  Finally, I included a short discussion on directions for neural network based recommender systems.  
+In this post, I have discussed implementing a neural network based recommender system.  I discussed, at a high level, how the neural network approach in this post differs from the singular value decomposition approach that I covered in my previous post.  I included some examples of the network architecture both in it's basic form, and with an added "bias" feature vector.  I included code written in Python that uses the pytorch framework and that can leverage a GPU.  I shared some initial result of the code showing how the network performed on a random hold-out test set.  Finally, I included a short discussion on directions for neural network based recommender systems.  
 
 I hope you have enjoyed this post!  Until next time...  
 

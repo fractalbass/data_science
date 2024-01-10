@@ -35,9 +35,9 @@ One of the challenges in building models like this is that users and items can s
 
 Note that the bias vectors are of length 1.  They are basically a trained value that increases or reduces the overall predictions simply by adding the values to the prediction.  Like the embedding vectors, these values are updated as the network gets trained.
 
-# SOme Code
+# Some Code
 
-The following includes some code that will train a neural network to make ratings predictions based on the MovieLense 100k dataset.  In this code, I have configured the system to run 450 training epochs.  With my Quadro GP100 (which is a slightly older GPU), this process took about an hour.
+The following includes some code that will train a neural network to make ratings predictions based on the MovieLens 100k dataset.  In this code, I have configured the system to run 450 training epochs.  With my Quadro GP100 (which is a slightly older GPU), this process took about an hour.
 
 <pre>
 import os
@@ -220,7 +220,7 @@ if __name__ == "__main__":
 
 # Results
 
-The above code, which I ran on my computer with a NVIDIA Quadro GP100 GPU, produced the following output. It took about an hour to train the above network.
+The above code, which I ran on my computer with a NVIDIA Quadro GP100 GPU, produced the following output. 
 
 (I have shorted the output here to make it a bit easier to consume.)
 
@@ -247,12 +247,12 @@ Here we can see that the network did a pretty good job of nailing the MovieLens 
 
 # Discussion
 
-The MovieLens dataset contains 943 users and 1682 items.  Clearly, this is pretty small dataset.  There have been a number of different approach to dealing with this problem including the release of the [Torchrec](https://github.com/pytorch/torchrec) domain library for Pytorch.  Torchrec provides a way to handle embeddings such that they can be better parallelized across multiple machines.  This allows network training to be scaled up to account for larger and larger datasets.  In 2019, Meta (the parent company of Facebook) released an open source solution for dealing with the problem.  Information about that approach can be found [here](https://ai.meta.com/blog/dlrm-an-advanced-open-source-deep-learning-recommendation-model/).
+The MovieLens dataset contains 943 users and 1682 items.  Clearly, this is apretty small dataset.  There have been a number of different approaches to dealing with this problem including the release of the [Torchrec](https://github.com/pytorch/torchrec) domain library for Pytorch.  Torchrec provides a way to handle embeddings such that they can be better parallelized across multiple machines.  This allows network training to be scaled up to account for larger and larger datasets.  In 2019, Meta (the parent company of Facebook) released an open source solution for dealing with the problem.  Information about that approach can be found [here](https://ai.meta.com/blog/dlrm-an-advanced-open-source-deep-learning-recommendation-model/).
 
 
 # Conclusion
 
-In this post, I have discussed implementing a neural network based recommender system.  I discussed, at a high level, how the neural network approach in this post differs from the singular value decomposition approach that I covered in my previous post.  I included some examples of the network architecture both in it's basic form, and with an added "bias" feature vector.  I included code written in Python that uses the pytorch framework and that can leverage a GPU.  I shared some initial result of the code showing how the network performed on a random hold-out test set.  Finally, I included a short discussion on directions for neural network based recommender systems.  
+In this post, I have discussed implementing a neural network based recommender system.  I discussed, at a high level, how the neural network approach in this post differs from the singular value decomposition approach that I covered in my previous post.  I included some examples of the network architecture both in it's basic form, and with an added "bias" feature vector.  I included code written in Python that uses the pytorch framework and that can leverage a GPU.  I shared some initial results of the code showing how the network performed on a random hold-out test set.  Finally, I included a short discussion on directions for neural network based recommender systems.  
 
 I hope you have enjoyed this post!  Until next time...  
 

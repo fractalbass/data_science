@@ -11,11 +11,11 @@ In my previous post, I wrote about how collaborative filtering works and went th
 
 Recall that our previous approach was essentially about creating a matrix that maps users and items.  This matrix is made up of previously known ratings from users.  In our example, the items were movies and the ratings were scores from 0.5 to 5.0.  Since not all users have watched all movies, the matrix in question is very sparse.  The goal, then, is to attempt find a solution that fills in the gaps.
 
-Using matrix factorization and singular value decomposition is just one approach to solving this problem.  Another approach involves using neural networks, or more accurately multi-layer perceptron or "MLPs".
+Using matrix factorization and singular value decomposition is just one approach to solving this problem.  Another approach involves using neural networks, or more accurately multi-layer perceptrons or "MLPs".
 
 # The MovieLens Dataset
 
-To demonstrate how this works, I am again using the MovieLens 100k dataset that consists of users, movies and rankings.  A number of references out there The neural network in this example is frequently referred to as deep learning, but IMO it really is not.  The neural networks in question are typically very shallow... though they can be quite "wide".  
+To demonstrate how this works, I am again using the MovieLens 100k dataset that consists of users, movies and rankings.  Neural network similar to the one in this example are frequently referred to as "deep learning", but IMO it really is not.  The neural networks in question are typically very shallow... though they can be quite "wide".  
 
 # Network Structure
 
@@ -23,15 +23,17 @@ To understand how the network is structured, let's start with a simple example. 
 
 ![Simple Network Architecture]({{ site.url }}/images/dlrm_simple_network.jpg)
 
-The key thing to understand here is that an initial "embedding" is taking place in order to feed information into the network.  This is done by creating a mapping from a given user and an embedding vector of some length.  In the case of my code for the movie example, the embedding vectors have a length of 20.  Initially, the values of the embedding vectors are randomized.  As the network continues to train, the back propagation is used to update these values.  What results is that the embedding vectors start to understand the "latent structure" hidden in the data.
-
-![Simple Network Architecture]({{ site.url }}/images/dlrm_simple_network_with_biases.jpg)
+The key thing to understand here is that an initial "embedding" is taking place in order to feed information into the network.  This is done by creating a mapping from a given user and an embedding vector of some length.  In the case of my code for the movie example, the embedding vectors have a length of 20.  Initially, the values of the embedding vectors are randomized.  As the network continues to train, back propagation is used to update these values.  What results is that the embedding vectors start to understand the "latent structure" hidden in the data.
 
 As with the previous example with collaborative filtering, this approach also suffers from the "cold-start problem."  The cold-start problem refers to the difficult of providing accurate recommendations for new or "cold" users that have limited historical data.  (Yes...  I did lift that from ChatGPT.)  Simply put, in order for us to do inference, we are going to have to have trained our model on at least some information for a given user and item.  
 
 # Introducing Factor Biases
 
-One of the challenges in building models like this is that users and items can suffer from biases.  For example, one user might be particularly generous in their rankings compared to others.  Or, certain items may have been reviewed more times than others.  in the paper "Factorization Meets the Neighborhood: a Multifaceted Collaborative Filtering Model." (Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining (KDD '08), pp. 426-434. DOI: 10.1145/1401890.1401944), author Yehuda Koren presents a way to deal with this situation by introducing a vector for user and item biases.  The presence of this vector can be seen here.  Note that the bias vectors are of length 1.  They are basically a trained value that increases or reduces the overall predictions simply by adding the values to the prediction.  Like the embedding vectors, these values are updated as the network gets trained.
+One of the challenges in building models like this is that users and items can suffer from biases.  For example, one user might be particularly generous in their rankings compared to others.  Or, certain items may have been reviewed more times than others.  in the paper "Factorization Meets the Neighborhood: a Multifaceted Collaborative Filtering Model." (Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining (KDD '08), pp. 426-434. DOI: 10.1145/1401890.1401944), author Yehuda Koren presents a way to deal with this situation by introducing a vector for user and item biases.  The addition of these bias vectors can be seen in the next diagram.
+
+![Simple Network Architecture]({{ site.url }}/images/dlrm_simple_network_with_biases.jpg)
+
+Note that the bias vectors are of length 1.  They are basically a trained value that increases or reduces the overall predictions simply by adding the values to the prediction.  Like the embedding vectors, these values are updated as the network gets trained.
 
 # SOme Code
 

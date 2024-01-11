@@ -15,9 +15,11 @@ Using matrix factorization and singular value decomposition is just one approach
 
 # The MovieLens Dataset
 
-To demonstrate how this works, I am again using the MovieLens 100k dataset that consists of users, movies and rankings.  Neural networks similar to the one in this example are frequently referred to as "deep learning", but IMO it really is not.  As we will see below, the network in use here has only a few layers.  Deep learning networks typically have dozens or more layers and lots of parameters.  For example, Yolo V8 has 53 convolutional layers alone, and GPT3.5 has 96 layers and 175B trainable parameters.  These types of networks are DEEP!  As we will see, the neural network in this example is very basic and very shallow.  
+To demonstrate how this works, I am again using the MovieLens 100k dataset that consists of users, movies and rankings.  More information about the MovieLens dataset [can be found on the GroupLens website.](https://grouplens.org/datasets/movielens/)
 
 # Network Structure
+
+Neural networks similar to the one in this example are frequently referred to as "deep learning", but IMO it really is not.  As we will see below, the network in use here has only a few layers.  Deep learning networks typically have dozens or more layers and lots of parameters.  For example, Yolo V8 has 53 convolutional layers alone, and GPT3.5 has 96 layers and 175B trainable parameters.  These types of networks are DEEP!  As we will see, the neural network in this example is very basic and very shallow.  
 
 To understand how the network is structured, let's start with a simple diagram.  The following diagram was created from the torchviz packaged.  We can see that the network starts with two main sets of inputs, user_factors and item_factors.  
 

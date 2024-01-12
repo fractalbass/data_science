@@ -7,7 +7,7 @@ categories: general
 
 # Introduction
 
-In my previous post, I wrote about how collaborative filtering works and went through a simple example implementation using the Surprise package in python.  Continuing on with that topic, I wanted to explore an alternative approach to this problem that uses neural networks. 
+In my previous post, I wrote about how matrix based collaborative filtering works and went through a simple example implementation using the Surprise package in python.  Continuing on with that topic, I wanted to explore an alternative approach to this problem that uses neural networks. 
 
 Recall that our previous approach was essentially about creating a matrix that maps users and items.  This matrix is made up of previously known ratings from users.  In our example, the items were movies and the ratings were scores from 0.5 to 5.0.  Since not all users have watched all movies, the matrix in question is very sparse.  The goal, then, is to attempt to find a solution that fills in the gaps.
 
@@ -27,7 +27,7 @@ To understand how the network is structured, let's start with a simple diagram. 
 
 The key thing to understand here is that an initial "embedding" is taking place in order to feed information into the network.  This is done by creating a mapping from a given user and an embedding vector of some length.  In the case of my code for the movie example, the embedding vectors have a length of 20.  Initially, the values of the embedding vectors are randomized.  As the network continues to train, back propagation is used to update these values.  As training progresses, the embedding vectors start to "understand the latent structure" hidden in the data.
 
-As with the previous example with collaborative filtering, this approach also suffers from the "cold-start problem."  The cold-start problem refers to the difficult of providing accurate recommendations for new or "cold" users that have limited historical data.  (Yes...  I did lift that from ChatGPT.)  Simply put, in order for us to do inference, we are going to have to have trained our model on at least some information for a given user and item.  
+As with the previous example with collaborative filtering, the neural network approach also suffers from the "cold-start problem."  The cold-start problem refers to the difficult of providing accurate recommendations for new or "cold" users that have limited historical data.  (Yes, I did lift that from ChatGPT.)  Simply put, in order for us to do inference, we are going to have to have trained our model on at least some information for a given user and item.  
 
 # Introducing Factor Biases
 

@@ -17,7 +17,7 @@ These three letter acronyms are important, particularly in the context of buildi
 
 Yes.  It happens.
 
-![Bad AUC]({{ site.url }}/images/bad_auc.jpg)
+![Bad AUC]({{ site.url }}/images/bad_auc.png)
 
 This is an actual AUC from a project that I am working on.  
 

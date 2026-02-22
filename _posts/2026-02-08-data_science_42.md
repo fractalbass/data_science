@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dendrites Aren't Digital
-date: 2026-02-08 12:00:00 -0500
+date: 2026-02-22 00:00:00 -0500
 categories: []
 ---
 

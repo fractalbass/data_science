@@ -121,7 +121,7 @@ $$
 P(X \in S)
 $$
 
-for some set $S$.
+For some set $S$
 
 In other words, probability theory shifts the focus from deterministic outputs to **distributions over possible outputs**.
 
